@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Update workspace.xml">
-      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/CancunHotel.Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/CustomerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/EntityTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/EntityFixture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltenChallenge.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AltenChallenge.sln" afterDir="false" />
-    </list>
+    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Add EntityTest.cs and EntityFixture.cs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661374453447</updated>
-      <workItem from="1661374476345" duration="7420000" />
+      <workItem from="1661374476345" duration="7740000" />
     </task>
     <task id="LOCAL-00001" summary="first commit: base project structure">
       <created>1661374801160</created>
@@ -115,7 +108,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661448909921</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add CancunHotel.Test.csproj">
+      <created>1661449816098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661449816099</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add CustomerTest.cs">
+      <created>1661449827920</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661449827920</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add EntityTest.cs and EntityFixture.cs">
+      <created>1661449839420</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661449839420</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +160,9 @@
     <MESSAGE value="Add Room.cs entity" />
     <MESSAGE value="Add Reservation.cs entity" />
     <MESSAGE value="Update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
+    <MESSAGE value="Add CancunHotel.Test.csproj" />
+    <MESSAGE value="Add CustomerTest.cs" />
+    <MESSAGE value="Add EntityTest.cs and EntityFixture.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add EntityTest.cs and EntityFixture.cs" />
   </component>
 </project>
