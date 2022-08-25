@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Add EntityTest.cs and EntityFixture.cs" />
+    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Add FluentAssertions nuget package">
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/CancunHotel.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/CancunHotel.Test/CancunHotel.Test.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/EntityTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/EntityTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/EntityFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/EntityFixture.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661374453447</updated>
-      <workItem from="1661374476345" duration="7740000" />
+      <workItem from="1661374476345" duration="8523000" />
     </task>
     <task id="LOCAL-00001" summary="first commit: base project structure">
       <created>1661374801160</created>
@@ -129,11 +133,87 @@
       <option name="project" value="LOCAL" />
       <updated>1661449839420</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add FluentAssertions nuget package">
+      <created>1661449974838</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661449974838</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="347" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Test 90% 2/20" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Test 90% 2/20" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Test 90% 2/20" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 100% 0/14" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 100% 0/14" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Entity 100% 0/14" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 24/56" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 39% 22/36" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Entities 0% 22/22" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -163,6 +243,7 @@
     <MESSAGE value="Add CancunHotel.Test.csproj" />
     <MESSAGE value="Add CustomerTest.cs" />
     <MESSAGE value="Add EntityTest.cs and EntityFixture.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add EntityTest.cs and EntityFixture.cs" />
+    <MESSAGE value="Add FluentAssertions nuget package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add FluentAssertions nuget package" />
   </component>
 </project>
