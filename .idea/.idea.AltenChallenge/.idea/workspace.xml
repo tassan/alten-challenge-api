@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Add Entity model">
-      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Room.cs" afterDir="false" />
+    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Update workspace.xml">
+      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/CancunHotel.Test.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/CustomerTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/EntityTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/EntityFixture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Core/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Core/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltenChallenge.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AltenChallenge.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9b6d595d-6973-42ef-8f10-925291f1e749" />
+        <option name="url" value="git@github.com:tassan/alten-challenge-api.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661374453447</updated>
-      <workItem from="1661374476345" duration="6613000" />
+      <workItem from="1661374476345" duration="7420000" />
     </task>
     <task id="LOCAL-00001" summary="first commit: base project structure">
       <created>1661374801160</created>
@@ -71,7 +80,42 @@
       <option name="project" value="LOCAL" />
       <updated>1661435062536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Entity.cs constructor">
+      <created>1661448850902</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448850902</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Customer.cs entity">
+      <created>1661448872589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448872589</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Room.cs entity">
+      <created>1661448879726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448879726</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Reservation.cs entity">
+      <created>1661448896105</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448896105</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update workspace.xml">
+      <created>1661448909920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448909921</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +141,11 @@
     <MESSAGE value="cancun hotel domain project" />
     <MESSAGE value="Add IEntity interface" />
     <MESSAGE value="Add Entity model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Entity model" />
+    <MESSAGE value="Add Entity.cs constructor" />
+    <MESSAGE value="Add Customer.cs entity" />
+    <MESSAGE value="Add Room.cs entity" />
+    <MESSAGE value="Add Reservation.cs entity" />
+    <MESSAGE value="Update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
   </component>
 </project>

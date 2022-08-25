@@ -4,6 +4,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7B83DC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Domain", "src\Domain\CancunHotel.Domain\CancunHotel.Domain.csproj", "{FB249BA5-50AA-4061-847C-CFCD28896CAD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{02C151F3-5BF7-4F99-B91F-A12E60BD7EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Test", "test\CancunHotel.Test\CancunHotel.Test.csproj", "{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -11,11 +15,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD} = {7B83DC88-F825-42B2-84B2-FC9A67C7513F}
+		{9A37E251-BC76-437F-A8B7-DB9E32B9DF62} = {02C151F3-5BF7-4F99-B91F-A12E60BD7EB5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
