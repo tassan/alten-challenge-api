@@ -17,7 +17,7 @@ public class CustomerTest : IClassFixture<CustomerFixture>
     [Fact]
     public void Should_Create_Valid_Customer()
     {
-        var customer = _fixture.CreateCustomer();
+        var customer = CustomerFixture.CreateCustomer();
         
         customer.Id
             .GetType()

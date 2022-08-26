@@ -16,7 +16,7 @@ public class RoomTest : IClassFixture<RoomFixture>
     [Fact]
     public void Should_Create_Valid_Room()
     {
-        var room = _fixture.CreateRoom();
+        var room = RoomFixture.CreateRoom();
 
         room.BedsAmount
             .Should()
