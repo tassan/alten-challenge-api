@@ -5,17 +5,10 @@ using Xunit;
 
 namespace CancunHotel.Test.Entities;
 
-public class EntityTest : IClassFixture<EntityFixture>
+public class EntityTest
 {
-    private readonly EntityFixture _fixture;
-
-    public EntityTest(EntityFixture fixture)
-    {
-        _fixture = fixture;
-    }
-
     [Fact]
-    public void Should_Create_Entity()
+    public void Should_Create_Valid_Entity()
     {
         var entity = EntityFixture.CreateEntity();
 
@@ -38,7 +31,7 @@ public class EntityTest : IClassFixture<EntityFixture>
     }
 
     [Fact]
-    public void Should_Update_UpdateAtProperty()
+    public void Should_Modify_UpdateAt_Property()
     {
         var entity = EntityFixture.CreateEntity();
         
@@ -48,6 +41,4 @@ public class EntityTest : IClassFixture<EntityFixture>
             .Should()
             .BeSameDateAs(DateTimeOffset.UtcNow);
     }
-    
-    
 }
