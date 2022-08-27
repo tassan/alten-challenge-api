@@ -14,10 +14,7 @@ public class ReservationFixture
         return new Faker<Reservation>()
             .RuleFor(r => r.CheckInDate, checkInDate)
             .RuleFor(r => r.CheckOutDate, checkOutDate)
-            .RuleFor(r => r.AdultsAmount, f => f.Random.Int(1, 4))
-            .RuleFor(r => r.ChildrenAmount, f => f.Random.Int(1, 4))
-            .RuleFor(r => r.RoomAmount, 1)
-            .RuleFor(r => r.Customer, CustomerFixture.CreateCustomer)
-            .RuleFor(r => r.Rooms, f => f.Make(1, RoomFixture.CreateRoom));
+            .RuleFor(r => r.GuestsAmount, f => f.Random.Int(1, 4))
+            .RuleFor(r => r.Customer, CustomerFixture.CreateCustomer);
     }
 }
