@@ -4,7 +4,7 @@ using CancunHotel.Domain.Entities;
 
 namespace CancunHotel.Test.Fixtures;
 
-public class ReservationFixture
+public static class ReservationFixture
 {
     public static Reservation CreateValidReservation()
     {
