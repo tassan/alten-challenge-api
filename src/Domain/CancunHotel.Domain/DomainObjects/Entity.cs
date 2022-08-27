@@ -1,6 +1,6 @@
 ﻿using CancunHotel.Domain.Interfaces;
 
-namespace CancunHotel.Domain.Core;
+namespace CancunHotel.Domain.DomainObjects;
 
 public abstract class Entity : IEntity
 {

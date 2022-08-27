@@ -1,4 +1,4 @@
-﻿using CancunHotel.Domain.Core;
+﻿using CancunHotel.Domain.DomainObjects;
 
 namespace CancunHotel.Domain.Entities;
 

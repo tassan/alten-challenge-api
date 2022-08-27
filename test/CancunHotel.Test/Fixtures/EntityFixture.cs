@@ -1,5 +1,5 @@
 ﻿using System;
-using CancunHotel.Domain.Core;
+using CancunHotel.Domain.DomainObjects;
 using CancunHotel.Domain.Interfaces;
 
 namespace CancunHotel.Test.Fixtures;
