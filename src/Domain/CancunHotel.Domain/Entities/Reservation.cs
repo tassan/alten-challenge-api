@@ -7,8 +7,12 @@ public class Reservation : Entity
     public DateTimeOffset CheckInDate { get; set; }
     public DateTimeOffset CheckOutDate { get; set; }
     public Customer Customer { get; set; }
-    public int AdultsAmount { get; set; }
-    public int ChildrenAmount { get; set; }
-    public int RoomAmount { get; set; }
-    public ICollection<Room> Rooms { get; set; }
+    public int GuestsAmount { get; set; }
+
+    public Reservation(Customer customer)
+    {
+        Customer = customer;
+    }
+
+    public Reservation() { }   
 }
