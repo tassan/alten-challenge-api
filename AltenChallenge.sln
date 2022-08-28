@@ -4,9 +4,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7B83DC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Domain", "src\Domain\CancunHotel.Domain\CancunHotel.Domain.csproj", "{FB249BA5-50AA-4061-847C-CFCD28896CAD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{02C151F3-5BF7-4F99-B91F-A12E60BD7EB5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Test", "test\CancunHotel.Test\CancunHotel.Test.csproj", "{9A37E251-BC76-437F-A8B7-DB9E32B9DF62}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02C151F3-5BF7-4F99-B91F-A12E60BD7EB5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6BCB9351-4A68-49C7-B965-D0099B150C6D}"
 EndProject
@@ -20,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{6D6E94B7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Infra", "src\Infra\CancunHotel.Infra\CancunHotel.Infra.csproj", "{8BA5031E-4AED-4382-A2BB-F191D13ADEAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancunHotel.Tests", "tests\CancunHotel.Tests\CancunHotel.Tests.csproj", "{DCE24F64-5863-46F1-B29E-9DD433C9B349}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +32,7 @@ Global
 		{BBD71CB0-F977-48BA-B2FE-B01E4C5E351F} = {6BCB9351-4A68-49C7-B965-D0099B150C6D}
 		{EA91D69B-B567-4FEC-98E3-9ED2D7C24FA7} = {95114163-C22D-43E5-829A-1011C67AF68E}
 		{8BA5031E-4AED-4382-A2BB-F191D13ADEAC} = {6D6E94B7-4898-4BDC-BDCA-D4D2EC4C19B5}
+		{DCE24F64-5863-46F1-B29E-9DD433C9B349} = {02C151F3-5BF7-4F99-B91F-A12E60BD7EB5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB249BA5-50AA-4061-847C-CFCD28896CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -50,5 +51,9 @@ Global
 		{8BA5031E-4AED-4382-A2BB-F191D13ADEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA5031E-4AED-4382-A2BB-F191D13ADEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA5031E-4AED-4382-A2BB-F191D13ADEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE24F64-5863-46F1-B29E-9DD433C9B349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE24F64-5863-46F1-B29E-9DD433C9B349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE24F64-5863-46F1-B29E-9DD433C9B349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE24F64-5863-46F1-B29E-9DD433C9B349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 using Bogus;
 using CancunHotel.Domain.Entities;
 
-namespace CancunHotel.Test.Fixtures;
+namespace CancunHotel.Tests.Fixtures;
 
 public static class ReservationFixture
 {

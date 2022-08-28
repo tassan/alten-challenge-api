@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AltenChallenge.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/ReservationTest.cs" afterDir="false" />
+    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra">
+      <change afterPath="$PROJECT_DIR$/src/Application/CancunHotel.CustomerCare.Service/CustomerCareService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/DomainObjects/EntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Interfaces/IEntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Interfaces/Services/ICustomerCareService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/CancunHotel.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Entities/CustomerTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Entities/EntityTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Entities/ReservationTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Fixtures/EntityFixture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Fixtures/ReservationFixture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/ReservationFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/ReservationFixture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltenChallenge.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AltenChallenge.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/CancunHotel.Test.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/CustomerTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/EntityTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Entities/ReservationTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/CustomerFixture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/EntityFixture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/ReservationFixture.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +36,20 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Customer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/test/CancunHotel.Test/Entities/CustomerTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/test/CancunHotel.Test/Entities/CustomerTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/test/CancunHotel.Test/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/test/CancunHotel.Test/Fixtures/ReservationFixture.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2DonjvhnXpzx4D7a54axbAaQlEl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -37,6 +64,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -52,14 +80,8 @@
       <updated>1661374453447</updated>
       <workItem from="1661374476345" duration="21560000" />
       <workItem from="1661553186390" duration="3139000" />
-      <workItem from="1661623365350" duration="281000" />
-    </task>
-    <task id="LOCAL-00001" summary="first commit: base project structure">
-      <created>1661374801160</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1661374801161</updated>
+      <workItem from="1661623365350" duration="5648000" />
+      <workItem from="1661630071680" duration="9672000" />
     </task>
     <task id="LOCAL-00002" summary="cancun hotel domain project">
       <created>1661435021261</created>
@@ -229,7 +251,182 @@
       <option name="project" value="LOCAL" />
       <updated>1661622448473</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Simplify Reservation.cs scope">
+      <created>1661624011381</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1661624011381</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Simplify ReservationFixture.cs scope">
+      <created>1661624028431</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1661624028431</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add ReservationTest.cs">
+      <created>1661624042511</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1661624042511</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update workspace.xml">
+      <created>1661624059745</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1661624059745</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Modify namespace Core to DomainObjects">
+      <created>1661626636554</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1661626636555</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Override Equals base function">
+      <created>1661626972503</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1661626972503</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Override base operators">
+      <created>1661627197914</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1661627197914</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Override GetHashCode to avoid getting the same hashcode">
+      <created>1661627374516</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1661627374516</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Override base ToString function">
+      <created>1661627452552</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1661627452552</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add unit test coverage to overrided functions">
+      <created>1661629674665</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1661629674665</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add sonar and sonarqube to gitignore">
+      <created>1661631050196</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1661631050196</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add SonarLint workflow to github">
+      <created>1661632231140</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632231140</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Modify Customer property to nullable">
+      <created>1661632337215</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632337215</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add constructors to Customer.cs">
+      <created>1661632356610</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632356610</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add Customer constructors tests">
+      <created>1661632410292</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632410292</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Adjust IDisposable implementation">
+      <created>1661632425617</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632425617</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Modify ReservationFixture.cs to static class">
+      <created>1661632763844</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1661632763844</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add IUnitOfWork.cs">
+      <created>1661638625498</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638625498</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add IRepository.cs">
+      <created>1661638634478</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638634478</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Ad ICustomerRepository.cs">
+      <created>1661638646615</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638646615</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add CustomerRepository.cs">
+      <created>1661638686544</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638686544</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add CancunHotelContext.cs">
+      <created>1661638698071</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638698071</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add CancunHotel.Infra.csproj">
+      <created>1661638717630</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638717630</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add CancunHotel.CustomerCare.Service.csproj">
+      <created>1661638731146</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638731146</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra">
+      <created>1661638756442</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1661638756444</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,47 +436,47 @@
     <option name="coveragePercentColumnWidth" value="108" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="276" />
+    <option name="symbolColumnWidth" value="299" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Entities 0% 21/21" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Entities 0% 30/30" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 64% 35/96" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Domain 0% 35/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Entities 0% 21/21" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Reservation 0% 15/15" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 200/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 72/72" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Entities 0% 30/30" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Customer 0% 15/15" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -301,49 +498,31 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="first commit: base project structure" />
-    <MESSAGE value="cancun hotel domain project" />
-    <MESSAGE value="Add IEntity interface" />
-    <MESSAGE value="Add Entity model" />
-    <MESSAGE value="Add Entity.cs constructor" />
-    <MESSAGE value="Add Customer.cs entity" />
-    <MESSAGE value="Add Room.cs entity" />
-    <MESSAGE value="Add Reservation.cs entity" />
-    <MESSAGE value="Add CancunHotel.Test.csproj" />
-    <MESSAGE value="Add CustomerTest.cs" />
-    <MESSAGE value="Add EntityTest.cs and EntityFixture.cs" />
-    <MESSAGE value="Add FluentAssertions nuget package" />
-    <MESSAGE value="Add Entity unit tests" />
-    <MESSAGE value="Add Bogus nuget package" />
-    <MESSAGE value="Add CustomerTest.cs and CustomerFixture.cs" />
-    <MESSAGE value="Add RoomTest.cs and RoomFixture.cs" />
-    <MESSAGE value="Rename entity test name" />
+    <MESSAGE value="Simplify Reservation.cs scope" />
+    <MESSAGE value="Simplify ReservationFixture.cs scope" />
+    <MESSAGE value="Add ReservationTest.cs" />
     <MESSAGE value="Update workspace.xml" />
-    <MESSAGE value="Add xunit.DependencyInjection nuget package" />
-    <MESSAGE value="- Implement IDisposable interface&#10;- Change CreateCustomer to static function" />
-    <MESSAGE value="- Implement IDisposable interface &#10;- Change CreateRoom to static function" />
-    <MESSAGE value="Change functions to static version" />
-    <MESSAGE value="Add ReservationFixture.cs" />
-    <MESSAGE value="Remove Room entity, Test and Fixture to simplify project scope" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Room entity, Test and Fixture to simplify project scope" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/test/CancunHotel.Test/Fixtures/ReservationFixture.cs</url>
-          <line>10</line>
-          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\test\CancunHotel.Test\Fixtures\ReservationFixture.cs" initialLine="10" containingFunctionPresentation="method 'CreateValidReservation'">
-            <startOffsets>
-              <option value="204" />
-            </startOffsets>
-            <endOffsets>
-              <option value="276" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Modify namespace Core to DomainObjects" />
+    <MESSAGE value="Override Equals base function" />
+    <MESSAGE value="Override base operators" />
+    <MESSAGE value="Override GetHashCode to avoid getting the same hashcode" />
+    <MESSAGE value="Override base ToString function" />
+    <MESSAGE value="Add unit test coverage to overrided functions" />
+    <MESSAGE value="Add sonar and sonarqube to gitignore" />
+    <MESSAGE value="Add SonarLint workflow to github" />
+    <MESSAGE value="Modify Customer property to nullable" />
+    <MESSAGE value="Add constructors to Customer.cs" />
+    <MESSAGE value="Add Customer constructors tests" />
+    <MESSAGE value="Adjust IDisposable implementation" />
+    <MESSAGE value="Modify ReservationFixture.cs to static class" />
+    <MESSAGE value="Add IUnitOfWork.cs" />
+    <MESSAGE value="Add IRepository.cs" />
+    <MESSAGE value="Ad ICustomerRepository.cs" />
+    <MESSAGE value="Add CustomerRepository.cs" />
+    <MESSAGE value="Add CancunHotelContext.cs" />
+    <MESSAGE value="Add CancunHotel.Infra.csproj" />
+    <MESSAGE value="Add CancunHotel.CustomerCare.Service.csproj" />
+    <MESSAGE value="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra" />
   </component>
 </project>

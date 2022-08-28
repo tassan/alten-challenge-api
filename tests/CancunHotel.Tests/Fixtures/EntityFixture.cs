@@ -2,7 +2,7 @@
 using CancunHotel.Domain.DomainObjects;
 using CancunHotel.Domain.Interfaces;
 
-namespace CancunHotel.Test.Fixtures;
+namespace CancunHotel.Tests.Fixtures;
 
 public class EntityFixture
 {

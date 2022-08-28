@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using CancunHotel.Domain.DomainObjects;
-using CancunHotel.Domain.Interfaces;
-using CancunHotel.Test.Fixtures;
+using CancunHotel.Tests.Fixtures;
 using FluentAssertions;
 using Xunit;
 
-namespace CancunHotel.Test.Entities;
+namespace CancunHotel.Tests.Entities;
 
 public class EntityTest
 {
