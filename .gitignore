@@ -3,6 +3,7 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+/dotCover.Output/
 # Created by https://www.toptal.com/developers/gitignore/api/sonar,sonarqube
 # Edit at https://www.toptal.com/developers/gitignore?templates=sonar,sonarqube
 
