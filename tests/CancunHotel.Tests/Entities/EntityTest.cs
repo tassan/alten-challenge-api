@@ -24,11 +24,11 @@ public class EntityTest
 
         entity.CreatedAt
             .Should()
-            .BeSameDateAs(DateTimeOffset.UtcNow);
+            .BeSameDateAs(DateTime.UtcNow);
         
         entity.UpdatedAt
             .Should()
-            .NotBeSameDateAs(DateTimeOffset.UtcNow);
+            .NotBeSameDateAs(DateTime.UtcNow);
     }
 
     [Fact]
@@ -40,7 +40,7 @@ public class EntityTest
         
         entity.UpdatedAt
             .Should()
-            .BeSameDateAs(DateTimeOffset.UtcNow);
+            .BeSameDateAs(DateTime.UtcNow);
     }
 
     [Fact]
