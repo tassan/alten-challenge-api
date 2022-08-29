@@ -53,6 +53,10 @@ public class ReservationTest
         reservation.GuestsAmount
             .Should()
             .BeGreaterThan(1);
+
+        reservation.CustomerId
+            .Should()
+            .NotBeEmpty();
         
         reservation.Customer
             .Should()
