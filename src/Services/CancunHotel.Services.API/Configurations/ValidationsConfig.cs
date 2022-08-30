@@ -8,5 +8,7 @@ public static class ValidationsConfig
     {
         services.AddScoped<CustomerValidation>();
         services.AddScoped<RegisterCustomerValidation>();
+        services.AddScoped<ReservationValidation>();
+        services.AddScoped<BookingValidation>();
     }
 }
