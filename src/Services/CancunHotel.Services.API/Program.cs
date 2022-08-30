@@ -1,3 +1,5 @@
+using System.Text.Json;
+using CancunHotel.Application.Converter;
 using CancunHotel.Services.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,13 +10,21 @@ builder.Configuration
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
     .AddEnvironmentVariables();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.Converters.Add(new DateTimeJsonConverter());
+    });
+
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
 builder.Services.AddAutoMapperConfiguration();
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddDependencyInjectionConfiguration();
 
 var app = builder.Build();
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 // Configure
 
