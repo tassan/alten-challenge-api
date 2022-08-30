@@ -10,23 +10,20 @@ namespace CancunHotel.Application.Services;
 
 public class CustomerAppService : ICustomerAppService
 {
-    public ValidationResult ValidationResult { get; set; }
-
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
-    private readonly RegisterCustomerValidation _registerCustomerValidation;
 
     public CustomerAppService(
         ICustomerRepository customerRepository,
-        IMapper mapper,
-        RegisterCustomerValidation registerCustomerValidation
+        IMapper mapper
     )
     {
         _customerRepository = customerRepository;
         _mapper = mapper;
-        _registerCustomerValidation = registerCustomerValidation;
         ValidationResult = new ValidationResult();
     }
+
+    public ValidationResult ValidationResult { get; set; }
 
     public async Task<IEnumerable<CustomerViewModel>> GetAll()
     {
@@ -41,9 +38,10 @@ public class CustomerAppService : ICustomerAppService
     public async Task<ValidationResult> Register(CustomerViewModel customerViewModel)
     {
         var customer = _mapper.Map<Customer>(customerViewModel);
-        var validation = await _registerCustomerValidation.ValidateAsync(customer);
-        if (!validation.IsValid)
-            return validation;
+        var validationResult = await ValidateRegisterCustomer(customer);
+        
+        if (!validationResult.IsValid)
+            return validationResult;
 
         var customerExists = await _customerRepository.GetByEmail(customer.Email);
         if (customerExists != null && customerExists.Id != customer.Id)
@@ -58,17 +56,48 @@ public class CustomerAppService : ICustomerAppService
         
         _customerRepository.Add(customer);
 
-        return validation;
+        return validationResult;
     }
 
-    public Task<ValidationResult> Update(CustomerViewModel customerViewModel)
+    public async Task<ValidationResult> Update(CustomerViewModel customerViewModel)
     {
-        throw new NotImplementedException();
+        var customer = _mapper.Map<Customer>(customerViewModel);
+        var validationResult = await ValidateUpdateCustomer(customer);
+        
+        if (!validationResult.IsValid)
+            return validationResult;
+
+        var customerExists = await _customerRepository.GetByEmail(customer.Email);
+        if (customerExists != null && customerExists.Id != customer.Id)
+        {
+            if (!customerExists.Equals(customer))
+            {
+                ValidationResult.Errors.Add(new ValidationFailure("ERROR",
+                    "The customer e-mail has already been taken."));
+                return ValidationResult;
+            }
+        }
+        
+        _customerRepository.Update(customer);
+
+        return validationResult;
     }
 
     public Task<ValidationResult> Remove(Guid id)
     {
         throw new NotImplementedException();
+    }
+
+    private async Task<ValidationResult> ValidateRegisterCustomer(Customer customer)
+    {
+        var registerCustomerValidation = new RegisterCustomerValidation();
+        return await registerCustomerValidation.ValidateAsync(customer);
+    }
+    
+    private async Task<ValidationResult> ValidateUpdateCustomer(Customer customer)
+    {
+        var updateCustomerValidation = new UpdateCustomerValidation();
+        return await updateCustomerValidation.ValidateAsync(customer);
     }
 
     public void Dispose()
