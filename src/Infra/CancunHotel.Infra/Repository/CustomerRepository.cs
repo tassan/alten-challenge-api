@@ -35,20 +35,17 @@ public class CustomerRepository : ICustomerRepository
 
     public void Add(Customer customer)
     {
-        _context.Add(customer);
-        _context.SaveChanges();
+        _dbSet.Add(customer);
     }
 
     public void Update(Customer customer)
     {
-        _context.Update(customer);
-        _context.SaveChanges();
+        _dbSet.Update(customer);
     }
 
     public void Remove(Customer customer)
     {
-        _context.Remove(customer);
-        _context.SaveChanges();
+        _dbSet.Update(customer);
     }
     
     public void Dispose() => _context.Dispose();
