@@ -13,6 +13,7 @@ public abstract class Entity : IEntity
     {
         Id = Guid.NewGuid();
         CreatedAt = DateTime.UtcNow;
+        UpdatedAt = DateTime.UtcNow;
         Deleted = false;
     }
 
