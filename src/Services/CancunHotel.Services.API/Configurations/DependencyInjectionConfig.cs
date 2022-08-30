@@ -13,8 +13,16 @@ namespace CancunHotel.Services.API.Configurations
             if (services == null) throw new ArgumentNullException(nameof(services));
 
             services.AddValidationsConfiguration();
-            services.AddTransient<ICustomerAppService, CustomerAppService>();
+            
+            // Repositories
             services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IReservationRepository, ReservationRepository>();
+            
+            // Services
+            services.AddTransient<ICustomerAppService, CustomerAppService>();
+            services.AddTransient<IBookingService, BookingService>();
+            
+            // Context
             services.AddTransient<ApplicationContext>();
         }
     }
