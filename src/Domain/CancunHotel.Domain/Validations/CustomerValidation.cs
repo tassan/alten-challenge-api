@@ -40,8 +40,8 @@ public class CustomerValidation : AbstractValidator<Customer>
             .NotEqual(Guid.Empty);
     }
     
-    protected static bool HaveMinimumAge(DateOnly birthDate)
+    protected static bool HaveMinimumAge(DateTime birthDate)
     {
-        return birthDate <= DateOnly.FromDateTime(DateTime.Now.Date.AddYears(-18));
+        return birthDate <= DateTime.Now.AddYears(-18);
     }
 }

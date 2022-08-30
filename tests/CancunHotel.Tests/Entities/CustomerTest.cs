@@ -33,7 +33,7 @@ public class CustomerTest : IClassFixture<CustomerFixture>
         
         customer.BirthDate
             .Should()
-            .NotBe(new DateOnly());
+            .NotBe(new DateTime());
     }
 
     [Theory]
@@ -42,7 +42,7 @@ public class CustomerTest : IClassFixture<CustomerFixture>
     [InlineData("Winston", "Churchill", "churchill@eng.gov")]
     public void Test_Customer_Constructor(string firstName, string lastName, string email)
     {
-        var customer = new Customer(firstName, lastName, email, DateOnly.FromDateTime(new Faker().Person.DateOfBirth));
+        var customer = new Customer(firstName, lastName, email, new Faker().Person.DateOfBirth);
         
         customer.Id
             .GetType()
@@ -63,6 +63,6 @@ public class CustomerTest : IClassFixture<CustomerFixture>
 
         customer.BirthDate
             .Should()
-            .NotBe(new DateOnly());
+            .NotBe(new DateTime());
     }
 }
