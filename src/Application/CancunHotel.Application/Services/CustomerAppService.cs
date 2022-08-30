@@ -55,6 +55,8 @@ public class CustomerAppService : CommandHandler, ICustomerAppService
             }
         }
 
+        NormalizeBirthDate(customer);
+            
         _customerRepository.Add(customer);
 
         return await Commit(_customerRepository.UnitOfWork);
@@ -106,6 +108,12 @@ public class CustomerAppService : CommandHandler, ICustomerAppService
     {
         var updateCustomerValidation = new UpdateCustomerValidation();
         return await updateCustomerValidation.ValidateAsync(customer);
+    }
+
+    private void NormalizeBirthDate(Customer customer)
+    {
+        var birthDate = customer.BirthDate;
+        customer.BirthDate = new DateTime(birthDate.Year, birthDate.Month, birthDate.Day, 0, 0, 0, DateTimeKind.Utc);
     }
 
     public void Dispose()
