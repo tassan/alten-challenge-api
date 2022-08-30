@@ -28,22 +28,30 @@ public class BookingService : CommandHandler, IBookingService
         var reservation = _mapper.Map<Reservation>(bookingViewModel);
         reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
 
-        var validationResult = await ValidateBooking(reservation);
+        var validationResult = await ValidateRegisterBooking(reservation);
 
         if (!validationResult.IsValid)
             return validationResult;
+
+        NormalizeCheckInTime(reservation);
+        NormalizeCheckOutTime(reservation);
 
         if (CheckReservationAvailability(reservation.CheckInDate, reservation.CheckOutDate))
         {
             AddError("There's already one reservation for the desired date");
             return ValidationResult;
         }
-        
-        NormalizeCheckInTime(reservation);
-        NormalizeCheckOutTime(reservation);
-        
+
         _reservationRepository.Add(reservation);
         return await Commit(_reservationRepository.UnitOfWork);
+    }
+
+    public async Task<ReadBookingViewModel?> GetReservationByEmail(string email)
+    {
+        var readBookingViewModel = (await GetAll())
+            .FirstOrDefault(r => r.Customer.Email == email);
+
+        return readBookingViewModel;
     }
 
     public bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut)
@@ -61,7 +69,45 @@ public class BookingService : CommandHandler, IBookingService
         return _mapper.Map<IEnumerable<ReadBookingViewModel>>(reservations);
     }
 
-    private async Task<ValidationResult> ValidateBooking(Reservation reservation)
+    public async Task<ValidationResult> Update(UpdateBookingViewModel bookingViewModel)
+    {
+        var reservation = _mapper.Map<Reservation>(bookingViewModel);
+        reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
+        var validationResult = await ValidateUpdateBooking(reservation);
+
+        if (!validationResult.IsValid)
+            return validationResult;
+
+        NormalizeCheckInTime(reservation);
+        NormalizeCheckOutTime(reservation);
+
+        _reservationRepository.Update(reservation);
+        return await Commit(_reservationRepository.UnitOfWork);
+    }
+
+    public async Task<ValidationResult> Remove(Guid id)
+    {
+        var reservation = await _reservationRepository.GetById(id);
+        reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
+        
+        if (reservation is null)
+        {
+            AddError("The reservation doesn't exists.");
+            return ValidationResult;
+        }
+
+        _reservationRepository.Remove(reservation);
+
+        return await Commit(_reservationRepository.UnitOfWork);
+    }
+
+    private async Task<ValidationResult> ValidateRegisterBooking(Reservation reservation)
+    {
+        var bookingValidation = new BookingValidation();
+        return await bookingValidation.ValidateAsync(reservation);
+    }
+
+    private async Task<ValidationResult> ValidateUpdateBooking(Reservation reservation)
     {
         var bookingValidation = new BookingValidation();
         return await bookingValidation.ValidateAsync(reservation);
@@ -72,7 +118,7 @@ public class BookingService : CommandHandler, IBookingService
         var checkInDate = reservation.CheckInDate;
         reservation.CheckInDate = new DateTime(checkInDate.Year, checkInDate.Month, checkInDate.Day, 0, 0, 0);
     }
-    
+
     private void NormalizeCheckOutTime(Reservation reservation)
     {
         var checkOutDate = reservation.CheckOutDate;
