@@ -15,7 +15,7 @@ public class BookingService : CommandHandler, IBookingService
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
 
-    protected BookingService(IReservationRepository reservationRepository, ICustomerRepository customerRepository,
+    public BookingService(IReservationRepository reservationRepository, ICustomerRepository customerRepository,
         IMapper mapper)
     {
         _reservationRepository = reservationRepository;
@@ -46,6 +46,11 @@ public class BookingService : CommandHandler, IBookingService
     public bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut)
     {
         return _reservationRepository.GetByDates(checkIn, checkOut).Any();
+    }
+
+    public async Task<IEnumerable<BookingViewModel>> GetAll()
+    {
+        return _mapper.Map<IEnumerable<BookingViewModel>>(await _reservationRepository.GetAll());
     }
 
     private async Task<ValidationResult> ValidateBooking(Reservation reservation)

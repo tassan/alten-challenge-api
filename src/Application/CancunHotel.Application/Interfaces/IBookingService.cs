@@ -7,4 +7,5 @@ public interface IBookingService : IDisposable
 {
     Task<ValidationResult> Register(BookingViewModel bookingViewModel);
     bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut);
+    Task<IEnumerable<BookingViewModel>> GetAll();
 }
