@@ -5,7 +5,7 @@ namespace CancunHotel.Application.Interfaces;
 
 public interface IBookingService : IDisposable
 {
-    Task<ValidationResult> Register(BookingViewModel bookingViewModel);
+    Task<ValidationResult> Register(CreateBookingViewModel bookingViewModel);
     bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut);
-    Task<IEnumerable<BookingViewModel>> GetAll();
+    Task<IEnumerable<ReadBookingViewModel>> GetAll();
 }
