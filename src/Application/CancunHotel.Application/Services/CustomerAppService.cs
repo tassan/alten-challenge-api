@@ -2,13 +2,14 @@
 using CancunHotel.Application.Interfaces;
 using CancunHotel.Application.ViewModels;
 using CancunHotel.Domain.Entities;
+using CancunHotel.Domain.Handler;
 using CancunHotel.Domain.Interfaces.Repository;
 using CancunHotel.Domain.Validations;
 using FluentValidation.Results;
 
 namespace CancunHotel.Application.Services;
 
-public class CustomerAppService : ICustomerAppService
+public class CustomerAppService : CommandHandler, ICustomerAppService
 {
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
@@ -20,14 +21,15 @@ public class CustomerAppService : ICustomerAppService
     {
         _customerRepository = customerRepository;
         _mapper = mapper;
-        ValidationResult = new ValidationResult();
     }
-
-    public ValidationResult ValidationResult { get; set; }
 
     public async Task<IEnumerable<CustomerViewModel>> GetAll()
     {
-        return _mapper.Map<IEnumerable<CustomerViewModel>>(await _customerRepository.GetAll());
+        var customers = (await _customerRepository.GetAll())
+            .AsQueryable()
+            .Where(c => !c.Deleted);
+        
+        return _mapper.Map<IEnumerable<CustomerViewModel>>(customers);
     }
 
     public async Task<CustomerViewModel> GetById(Guid id)
@@ -39,7 +41,7 @@ public class CustomerAppService : ICustomerAppService
     {
         var customer = _mapper.Map<Customer>(customerViewModel);
         var validationResult = await ValidateRegisterCustomer(customer);
-        
+
         if (!validationResult.IsValid)
             return validationResult;
 
@@ -48,44 +50,50 @@ public class CustomerAppService : ICustomerAppService
         {
             if (!customerExists.Equals(customer))
             {
-                ValidationResult.Errors.Add(new ValidationFailure("ERROR",
-                    "The customer e-mail has already been taken."));
+                AddError("The customer e-mail has already been taken.");
                 return ValidationResult;
             }
         }
-        
+
         _customerRepository.Add(customer);
 
-        return validationResult;
+        return await Commit(_customerRepository.UnitOfWork);
     }
 
     public async Task<ValidationResult> Update(CustomerViewModel customerViewModel)
     {
         var customer = _mapper.Map<Customer>(customerViewModel);
         var validationResult = await ValidateUpdateCustomer(customer);
-        
+
         if (!validationResult.IsValid)
             return validationResult;
 
         var customerExists = await _customerRepository.GetByEmail(customer.Email);
-        if (customerExists != null && customerExists.Id != customer.Id)
+        if (customerExists != null && customerExists.Id != customer.Id && !customerExists.Deleted)
         {
-            if (!customerExists.Equals(customer))
-            {
-                ValidationResult.Errors.Add(new ValidationFailure("ERROR",
-                    "The customer e-mail has already been taken."));
-                return ValidationResult;
-            }
+            customer.Id = customerExists.Id;
+            customer.CreatedAt = customerExists.CreatedAt;
         }
-        
+
         _customerRepository.Update(customer);
 
-        return validationResult;
+        return await Commit(_customerRepository.UnitOfWork);
     }
 
-    public Task<ValidationResult> Remove(Guid id)
+    public async Task<ValidationResult> Remove(Guid id)
     {
-        throw new NotImplementedException();
+        var customer = await _customerRepository.GetById(id);
+
+        if (customer is null)
+        {
+            AddError("The customer doesn't exists.");
+            return ValidationResult;
+        }
+
+        customer.Delete();
+        _customerRepository.Remove(customer);
+
+        return await Commit(_customerRepository.UnitOfWork);
     }
 
     private async Task<ValidationResult> ValidateRegisterCustomer(Customer customer)
@@ -93,7 +101,7 @@ public class CustomerAppService : ICustomerAppService
         var registerCustomerValidation = new RegisterCustomerValidation();
         return await registerCustomerValidation.ValidateAsync(customer);
     }
-    
+
     private async Task<ValidationResult> ValidateUpdateCustomer(Customer customer)
     {
         var updateCustomerValidation = new UpdateCustomerValidation();
