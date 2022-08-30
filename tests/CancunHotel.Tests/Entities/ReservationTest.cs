@@ -37,8 +37,8 @@ public class ReservationTest
         
         var reservation = new Reservation(customer)
         {
-            CheckInDate = DateTimeOffset.UtcNow,
-            CheckOutDate = DateTimeOffset.UtcNow.AddDays(3),
+            CheckInDate = DateTime.UtcNow,
+            CheckOutDate = DateTime.UtcNow.AddDays(3),
             GuestsAmount = 4
         };
 

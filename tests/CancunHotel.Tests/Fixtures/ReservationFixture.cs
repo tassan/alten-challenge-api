@@ -8,8 +8,8 @@ public static class ReservationFixture
 {
     public static Reservation CreateValidReservation()
     {
-        var checkInDate = new Faker().Date.SoonOffset(1, DateTimeOffset.UtcNow);
-        var checkOutDate = new Faker().Date.SoonOffset(30, checkInDate);
+        var checkInDate = new Faker().Date.Soon(1, DateTime.UtcNow);
+        var checkOutDate = new Faker().Date.Soon(30, checkInDate);
         
         return new Faker<Reservation>()
             .RuleFor(r => r.CheckInDate, checkInDate)
