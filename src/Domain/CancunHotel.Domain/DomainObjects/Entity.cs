@@ -7,14 +7,12 @@ public abstract class Entity : IEntity
     public Guid Id { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
-    public bool Deleted { get; set; }
 
     protected Entity()
     {
         Id = Guid.NewGuid();
         CreatedAt = DateTime.UtcNow;
         UpdatedAt = DateTime.UtcNow;
-        Deleted = false;
     }
 
     public override bool Equals(object? obj)
