@@ -16,7 +16,7 @@ public class Customer : Entity
         FirstName = firstName;
         LastName = lastName;
         Email = email;
-        BirthDate = new DateTime(birthDate.Year, birthDate.Month, birthDate.Day, 0, 0, 0, DateTimeKind.Utc);
+        BirthDate = birthDate;
     }
 
     public void Delete(bool deleteUser = true) => Deleted = deleteUser;
