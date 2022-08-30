@@ -13,9 +13,19 @@ namespace CancunHotel.Application.AutoMapper
 
             CreateMap<CreateBookingViewModel, Reservation>()
                 .ConstructUsing(b => new Reservation(b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
-            
+
             CreateMap<ReadBookingViewModel, Reservation>()
                 .ConstructUsing(b => new Reservation(b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
+
+            CreateMap<ReadBookingViewModel, Reservation>()
+                .ConstructUsing(b =>
+                    new Reservation(b.Id, b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
+
+            CreateMap<UpdateBookingViewModel, Reservation>()
+                .ConstructUsing(b => new Reservation(b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
+            
+            CreateMap<UpdateBookingViewModel, Reservation>()
+                .ConstructUsing(b => new Reservation(b.Id, b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
         }
     }
 }

@@ -11,6 +11,7 @@ namespace CancunHotel.Application.AutoMapper
             CreateMap<Customer, CustomerViewModel>();
             CreateMap<Reservation, CreateBookingViewModel>();
             CreateMap<Reservation, ReadBookingViewModel>();
+            CreateMap<Reservation, UpdateBookingViewModel>();
         }
     }
 }
