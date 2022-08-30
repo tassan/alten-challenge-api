@@ -27,6 +27,17 @@ public class ApplicationContext : DbContext, IUnitOfWork
         return success;
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Reservation>()
+            .Ignore(r => r.Customer);
+        
+        modelBuilder.Entity<Reservation>()
+            .Ignore(r => r.DaysReservedCount);
+        
+        base.OnModelCreating(modelBuilder);
+    }
+
     public override int SaveChanges()
     {
         var entries = ChangeTracker
