@@ -8,18 +8,18 @@ public abstract class GenericRepository<TEntity, TContext> : IRepository<TEntity
     where TContext : DbContext, IUnitOfWork
     where TEntity : class, IEntity
 {
-    private readonly TContext _context;
+    protected readonly TContext Context;
     protected readonly DbSet<TEntity> DbSet;
 
     protected GenericRepository(TContext context)
     {
-        _context = context;
-        DbSet = _context.Set<TEntity>();
+        Context = context;
+        DbSet = Context.Set<TEntity>();
     }
 
-    public void Dispose() => _context.Dispose();
+    public void Dispose() => Context.Dispose();
 
-    public IUnitOfWork UnitOfWork => _context;
+    public IUnitOfWork UnitOfWork => Context;
 
     public virtual async Task<TEntity> GetById(Guid id)
     {
@@ -45,6 +45,6 @@ public abstract class GenericRepository<TEntity, TContext> : IRepository<TEntity
 
     public virtual void Remove(TEntity entity)
     {
-        DbSet.Update(entity);
+        DbSet.Remove(entity);
     }
 }
