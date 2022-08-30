@@ -25,11 +25,7 @@ public class CustomerAppService : CommandHandler, ICustomerAppService
 
     public async Task<IEnumerable<CustomerViewModel>> GetAll()
     {
-        var customers = (await _customerRepository.GetAll())
-            .AsQueryable()
-            .Where(c => !c.Deleted);
-        
-        return _mapper.Map<IEnumerable<CustomerViewModel>>(customers);
+        return _mapper.Map<IEnumerable<CustomerViewModel>>(await _customerRepository.GetAll());
     }
 
     public async Task<CustomerViewModel> GetById(Guid id)
@@ -71,7 +67,7 @@ public class CustomerAppService : CommandHandler, ICustomerAppService
             return validationResult;
 
         var customerExists = await _customerRepository.GetByEmail(customer.Email);
-        if (customerExists != null && customerExists.Id != customer.Id && !customerExists.Deleted)
+        if (customerExists != null && customerExists.Id != customer.Id)
         {
             customer.Id = customerExists.Id;
             customer.CreatedAt = customerExists.CreatedAt;
@@ -92,7 +88,6 @@ public class CustomerAppService : CommandHandler, ICustomerAppService
             return ValidationResult;
         }
 
-        customer.Delete();
         _customerRepository.Remove(customer);
 
         return await Commit(_customerRepository.UnitOfWork);
