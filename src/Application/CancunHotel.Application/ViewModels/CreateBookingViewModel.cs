@@ -1,6 +1,6 @@
 ﻿namespace CancunHotel.Application.ViewModels;
 
-public class BookingViewModel
+public class CreateBookingViewModel
 {
     public Guid CustomerId { get; set; }
     public DateTime CheckInDate { get; set; }
