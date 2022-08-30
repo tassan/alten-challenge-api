@@ -18,4 +18,6 @@ public class Customer : Entity
         Email = email;
         BirthDate = birthDate;
     }
+
+    public void Delete(bool deleteUser = true) => Deleted = deleteUser;
 }
