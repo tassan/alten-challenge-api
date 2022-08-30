@@ -7,11 +7,11 @@ public class DateTimeJsonConverter : JsonConverter<DateTime>
 {
     public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
-        return DateTime.Parse(reader.GetString() ?? throw new InvalidOperationException());
+        return DateTime.Parse(reader.GetString() ?? throw new InvalidOperationException()).ToUniversalTime();
     }
 
     public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
     {
-        writer.WriteStringValue(value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss"));
+        writer.WriteStringValue(value.ToLocalTime());
     }
 }
