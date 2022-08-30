@@ -17,10 +17,6 @@ public class EntityTest
             .GetType()
             .Should()
             .Be(typeof(Guid));
-        
-        entity.Deleted
-            .Should()
-            .BeFalse();
 
         entity.CreatedAt
             .Should()
@@ -28,7 +24,7 @@ public class EntityTest
         
         entity.UpdatedAt
             .Should()
-            .NotBeSameDateAs(DateTime.UtcNow);
+            .BeSameDateAs(DateTime.UtcNow);
     }
 
     [Fact]
