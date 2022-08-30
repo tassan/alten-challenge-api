@@ -44,10 +44,6 @@ public class ReservationValidation : AbstractValidator<Reservation>
     {
         RuleFor(r => r.CustomerId)
             .NotEqual(Guid.Empty);
-
-        RuleFor(r => r.Customer.Deleted)
-            .NotEqual(true)
-            .WithMessage("The Customer must be active");
     }
 
     protected void ValidateId()
