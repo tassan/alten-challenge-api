@@ -13,8 +13,14 @@ public class ApplicationContext : DbContext, IUnitOfWork
         : base(options)
     {
     }
+    
+    public bool Commit()
+    {
+        var success = SaveChanges() > 0;
+        return success;
+    }
 
-    public async Task<bool> Commit()
+    public async Task<bool> CommitAsync()
     {
         var success = await SaveChangesAsync() > 0;
         return success;
@@ -29,7 +35,7 @@ public class ApplicationContext : DbContext, IUnitOfWork
         foreach (var entityEntry in entries)
         {
             ((Entity) entityEntry.Entity).UpdatedAt = DateTime.UtcNow;
-
+            
             if (entityEntry.State == EntityState.Added)
             {
                 ((Entity) entityEntry.Entity).CreatedAt = DateTime.UtcNow;
@@ -37,5 +43,24 @@ public class ApplicationContext : DbContext, IUnitOfWork
         }
 
         return base.SaveChanges();
+    }
+
+    public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken())
+    {
+        var entries = ChangeTracker
+            .Entries()
+            .Where(e => e.Entity is Entity && e.State is EntityState.Added or EntityState.Modified);
+
+        foreach (var entityEntry in entries)
+        {
+            ((Entity) entityEntry.Entity).UpdatedAt = DateTime.UtcNow;
+
+            if (entityEntry.State == EntityState.Added)
+            {
+                ((Entity) entityEntry.Entity).CreatedAt = DateTime.UtcNow;
+            }
+        }
+        
+        return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
     }
 }
