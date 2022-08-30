@@ -23,7 +23,7 @@ public class BookingService : CommandHandler, IBookingService
         _mapper = mapper;
     }
 
-    public async Task<ValidationResult> Register(BookingViewModel bookingViewModel)
+    public async Task<ValidationResult> Register(CreateBookingViewModel bookingViewModel)
     {
         var reservation = _mapper.Map<Reservation>(bookingViewModel);
         reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
@@ -39,6 +39,9 @@ public class BookingService : CommandHandler, IBookingService
             return ValidationResult;
         }
         
+        NormalizeCheckInTime(reservation);
+        NormalizeCheckOutTime(reservation);
+        
         _reservationRepository.Add(reservation);
         return await Commit(_reservationRepository.UnitOfWork);
     }
@@ -48,15 +51,32 @@ public class BookingService : CommandHandler, IBookingService
         return _reservationRepository.GetByDates(checkIn, checkOut).Any();
     }
 
-    public async Task<IEnumerable<BookingViewModel>> GetAll()
+    public async Task<IEnumerable<ReadBookingViewModel>> GetAll()
     {
-        return _mapper.Map<IEnumerable<BookingViewModel>>(await _reservationRepository.GetAll());
+        var reservations = await _reservationRepository.GetAll();
+
+        foreach (var reservation in reservations)
+            reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
+
+        return _mapper.Map<IEnumerable<ReadBookingViewModel>>(reservations);
     }
 
     private async Task<ValidationResult> ValidateBooking(Reservation reservation)
     {
         var bookingValidation = new BookingValidation();
         return await bookingValidation.ValidateAsync(reservation);
+    }
+
+    private void NormalizeCheckInTime(Reservation reservation)
+    {
+        var checkInDate = reservation.CheckInDate;
+        reservation.CheckInDate = new DateTime(checkInDate.Year, checkInDate.Month, checkInDate.Day, 0, 0, 0);
+    }
+    
+    private void NormalizeCheckOutTime(Reservation reservation)
+    {
+        var checkOutDate = reservation.CheckOutDate;
+        reservation.CheckOutDate = new DateTime(checkOutDate.Year, checkOutDate.Month, checkOutDate.Day, 23, 59, 59);
     }
 
     public void Dispose()
