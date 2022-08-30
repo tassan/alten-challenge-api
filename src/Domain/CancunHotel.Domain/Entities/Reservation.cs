@@ -24,7 +24,8 @@ public class Reservation : Entity
     {
         CustomerId = customerId;
         CheckInDate = new DateTime(checkInDate.Year, checkInDate.Month, checkInDate.Day, 0, 0, 0, DateTimeKind.Utc);
-        CheckOutDate = new DateTime(checkOutDate.Year, checkOutDate.Month, checkOutDate.Day, 23, 59, 59, DateTimeKind.Utc);
+        CheckOutDate = new DateTime(checkOutDate.Year, checkOutDate.Month, checkOutDate.Day, 23, 59, 59,
+            DateTimeKind.Utc);
         GuestsAmount = guestsAmount;
     }
 
