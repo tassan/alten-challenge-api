@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace CancunHotel.Services.API.Controllers;
 
 [ApiController]
-[Route("customer")]
 public class CustomerController : ControllerBase
 {
     private readonly ICustomerAppService _customerAppService;
