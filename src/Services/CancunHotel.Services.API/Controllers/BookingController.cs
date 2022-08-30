@@ -17,7 +17,7 @@ public class BookingController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("booking-management")]
-    public async Task<IActionResult> Post([FromBody] BookingViewModel bookingViewModel)
+    public async Task<IActionResult> Post([FromBody] CreateBookingViewModel bookingViewModel)
     {
         return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _bookingService.Register(bookingViewModel));
     }
