@@ -7,9 +7,25 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Change indentation of Reservation.cs">
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Change launchBrowser parameter to false">
+      <change afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/ViewModels/UpdateBookingViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/AutoMapper/DomainToViewModelMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/AutoMapper/DomainToViewModelMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Interfaces/IBookingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Interfaces/IBookingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/BookingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/BookingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/CustomerAppService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/CustomerAppService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/ViewModels/ReadBookingViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/ViewModels/ReadBookingViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/DomainObjects/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/DomainObjects/Entity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Interfaces/IEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Interfaces/IEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Validations/ReservationValidation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Validations/ReservationValidation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/GenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,34 +46,31 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1289edfe74d82a7e26cdcefb19d2209064eade34cd2be4021286d3f7f55ba74/FakeAsserter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1e8feaadf5c3fa14d36ea2a638c432a2e1a47b7837d8b83d88303c5d9c15cf/AsyncValueTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/538811d0fba15c61b743814ea8b7193d48cfbb84a1a53c5db2512b1b329330/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64277dff601943485f1ce8e1d4b72d961f81f957ac2be4877a778a938ba582c/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97af33e538b92416d330d2761cc7286a751e61b8a8b11f567c646267804c9843/Utf8JsonReader.TryGet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9f3f2539caf1d1d3bc962f51b12a49523c53a6a135dd252df0b23b14b3515df/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6354d55b4c1fdbe22621ea48185af62cdeadcf4f28d9ed0890dfdf36c6/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/AutoMapper/DomainToViewModelMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Converter/DateTimeJsonConverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Interfaces/IBookingService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Services/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/ViewModels/CustomerViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/DomainObjects/Entity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Services/CustomerAppService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Customer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Validations/CustomerValidation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Context/ApplicationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Repository/GenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Entities/CustomerTest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2DonjvhnXpzx4D7a54axbAaQlEl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,17 +80,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.24513619",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CancunHotel.Services.API">
     <configuration name="CancunHotel.Services.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" />
@@ -117,7 +132,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="" />
+      <changelist id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="" />
       <created>1661374453447</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -128,352 +143,355 @@
       <workItem from="1661630071680" duration="11922000" />
       <workItem from="1661729206570" duration="18495000" />
       <workItem from="1661794525853" duration="2940000" />
-      <workItem from="1661805345928" duration="2925000" />
+      <workItem from="1661805345928" duration="12458000" />
+      <workItem from="1661827274053" duration="9258000" />
+      <workItem from="1661836686063" duration="7996000" />
+      <workItem from="1661873877377" duration="16961000" />
     </task>
-    <task id="LOCAL-00022" summary="- Implement IDisposable interface &#10;- Change CreateRoom to static function">
-      <created>1661525092577</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00088" summary="Add BirthDate constructor usage">
+      <created>1661820374755</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1661525092577</updated>
+      <updated>1661820374755</updated>
     </task>
-    <task id="LOCAL-00023" summary="Change functions to static version">
-      <created>1661525121826</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00089" summary="Add Minimum Age validation">
+      <created>1661820533137</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1661525121826</updated>
+      <updated>1661820533137</updated>
     </task>
-    <task id="LOCAL-00024" summary="Add ReservationFixture.cs">
-      <created>1661525211503</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00090" summary="Add BirthDate field Migration">
+      <created>1661820657542</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1661525211503</updated>
+      <updated>1661820657542</updated>
     </task>
-    <task id="LOCAL-00025" summary="Remove Room entity, Test and Fixture to simplify project scope">
-      <created>1661622448473</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00091" summary="Add Delete customer function">
+      <created>1661825064605</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1661622448473</updated>
+      <updated>1661825064605</updated>
     </task>
-    <task id="LOCAL-00026" summary="Simplify Reservation.cs scope">
-      <created>1661624011381</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00092" summary="Add Commit and CommitAsync functions to ApplicationContext.cs">
+      <created>1661826941873</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1661624011381</updated>
+      <updated>1661826941873</updated>
     </task>
-    <task id="LOCAL-00027" summary="Simplify ReservationFixture.cs scope">
-      <created>1661624028431</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00093" summary="Fix methods implementation">
+      <created>1661826966887</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1661624028431</updated>
+      <updated>1661826966887</updated>
     </task>
-    <task id="LOCAL-00028" summary="Add ReservationTest.cs">
-      <created>1661624042511</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00094" summary="Add CommandHandler.cs to handle unit of work commands">
+      <created>1661827000691</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1661624042511</updated>
+      <updated>1661827000691</updated>
     </task>
-    <task id="LOCAL-00029" summary="Update workspace.xml">
-      <created>1661624059745</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00095" summary="- Add Remove customer implementation&#10;- Fix Update customer implementation&#10;- Add filter to deleted customer">
+      <created>1661827064152</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1661624059745</updated>
+      <updated>1661827064152</updated>
     </task>
-    <task id="LOCAL-00030" summary="Modify namespace Core to DomainObjects">
-      <created>1661626636554</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00096" summary="- Add http put verb implementation&#10;- Add http delete verb implementation">
+      <created>1661827100320</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1661626636555</updated>
+      <updated>1661827100320</updated>
     </task>
-    <task id="LOCAL-00031" summary="Override Equals base function">
-      <created>1661626972503</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00097" summary="Add IReservationRepository.cs interface">
+      <created>1661829104534</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1661626972503</updated>
+      <updated>1661829104535</updated>
     </task>
-    <task id="LOCAL-00032" summary="Override base operators">
-      <created>1661627197914</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00098" summary="Add ReservationRepository.cs implementation">
+      <created>1661829117154</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1661627197914</updated>
+      <updated>1661829117154</updated>
     </task>
-    <task id="LOCAL-00033" summary="Override GetHashCode to avoid getting the same hashcode">
-      <created>1661627374516</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00099" summary="Add GenericRepository.cs to unify repository structure">
+      <created>1661830520089</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1661627374516</updated>
+      <updated>1661830520089</updated>
     </task>
-    <task id="LOCAL-00034" summary="Override base ToString function">
-      <created>1661627452552</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00100" summary="Add new IRepository Implementation">
+      <created>1661830562689</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1661627452552</updated>
+      <updated>1661830562689</updated>
     </task>
-    <task id="LOCAL-00035" summary="Add unit test coverage to overrided functions">
-      <created>1661629674665</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00101" summary="Add ReservationRepository.cs">
+      <created>1661830577238</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
       <option name="project" value="LOCAL" />
-      <updated>1661629674665</updated>
+      <updated>1661830577238</updated>
     </task>
-    <task id="LOCAL-00036" summary="Add sonar and sonarqube to gitignore">
-      <created>1661631050196</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00102" summary="Add GenericRepository inheritance and implementation">
+      <created>1661830617360</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
       <option name="project" value="LOCAL" />
-      <updated>1661631050196</updated>
+      <updated>1661830617360</updated>
     </task>
-    <task id="LOCAL-00037" summary="Add SonarLint workflow to github">
-      <created>1661632231140</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00103" summary="Add dependency injection of BookingService and ReservationRepository">
+      <created>1661830651441</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
       <option name="project" value="LOCAL" />
-      <updated>1661632231140</updated>
+      <updated>1661830651441</updated>
     </task>
-    <task id="LOCAL-00038" summary="Modify Customer property to nullable">
-      <created>1661632337215</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00104" summary="- Add BookingService.cs&#10;- Add IBookingService.cs&#10;- Add BookingViewModel.cs">
+      <created>1661830685155</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
       <option name="project" value="LOCAL" />
-      <updated>1661632337215</updated>
+      <updated>1661830685155</updated>
     </task>
-    <task id="LOCAL-00039" summary="Add constructors to Customer.cs">
-      <created>1661632356610</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00105" summary="Add Reservations Dbset">
+      <created>1661830702678</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
       <option name="project" value="LOCAL" />
-      <updated>1661632356610</updated>
+      <updated>1661830702678</updated>
     </task>
-    <task id="LOCAL-00040" summary="Add Customer constructors tests">
-      <created>1661632410292</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00106" summary="Change properties to use DateTime instead of DateTimeOffset">
+      <created>1661831137007</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1661632410292</updated>
+      <updated>1661831137007</updated>
     </task>
-    <task id="LOCAL-00041" summary="Adjust IDisposable implementation">
-      <created>1661632425617</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00107" summary="Add Reservation ef migration">
+      <created>1661831358838</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
       <option name="project" value="LOCAL" />
-      <updated>1661632425617</updated>
+      <updated>1661831358838</updated>
     </task>
-    <task id="LOCAL-00042" summary="Modify ReservationFixture.cs to static class">
-      <created>1661632763844</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00108" summary="Add new constructor to Reservation.cs">
+      <created>1661834090245</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
       <option name="project" value="LOCAL" />
-      <updated>1661632763844</updated>
+      <updated>1661834090245</updated>
     </task>
-    <task id="LOCAL-00043" summary="Add IUnitOfWork.cs">
-      <created>1661638625498</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00109" summary="Add ReservationValidation.cs">
+      <created>1661834105311</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
       <option name="project" value="LOCAL" />
-      <updated>1661638625498</updated>
+      <updated>1661834105311</updated>
     </task>
-    <task id="LOCAL-00044" summary="Add IRepository.cs">
-      <created>1661638634478</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00110" summary="Add BookingValidation.cs">
+      <created>1661834115405</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
       <option name="project" value="LOCAL" />
-      <updated>1661638634478</updated>
+      <updated>1661834115405</updated>
     </task>
-    <task id="LOCAL-00045" summary="Ad ICustomerRepository.cs">
-      <created>1661638646615</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00111" summary="Modify DateTimeOffset property to DateTime in BookingViewModel.cs">
+      <created>1661834598875</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
       <option name="project" value="LOCAL" />
-      <updated>1661638646615</updated>
+      <updated>1661834598875</updated>
     </task>
-    <task id="LOCAL-00046" summary="Add CustomerRepository.cs">
-      <created>1661638686544</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00112" summary="Add mapping to BookingViewModel and Reservation">
+      <created>1661834658416</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
       <option name="project" value="LOCAL" />
-      <updated>1661638686544</updated>
+      <updated>1661834658416</updated>
     </task>
-    <task id="LOCAL-00047" summary="Add CancunHotelContext.cs">
-      <created>1661638698071</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00113" summary="Add GetByDates query to ReservationRepository.cs">
+      <created>1661835362719</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
       <option name="project" value="LOCAL" />
-      <updated>1661638698071</updated>
+      <updated>1661835362719</updated>
     </task>
-    <task id="LOCAL-00048" summary="Add CancunHotel.Infra.csproj">
-      <created>1661638717630</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+    <task id="LOCAL-00114" summary="Add ReservationValidation and BookingValidation to ValidationsConfig.cs">
+      <created>1661835445968</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
       <option name="project" value="LOCAL" />
-      <updated>1661638717630</updated>
+      <updated>1661835445968</updated>
     </task>
-    <task id="LOCAL-00049" summary="Add CancunHotel.CustomerCare.Service.csproj">
-      <created>1661638731146</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+    <task id="LOCAL-00115" summary="- Implement Register booking in BookingService.cs&#10;- Implement CheckReservationAvailability in BookingService.cs&#10;- Add CheckReservationAvailability to IBookingService.cs">
+      <created>1661835522379</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
       <option name="project" value="LOCAL" />
-      <updated>1661638731146</updated>
+      <updated>1661835522379</updated>
     </task>
-    <task id="LOCAL-00050" summary="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra">
-      <created>1661638756442</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+    <task id="LOCAL-00116" summary="Fix datetime timekind">
+      <created>1661837504497</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
       <option name="project" value="LOCAL" />
-      <updated>1661638756444</updated>
+      <updated>1661837504498</updated>
     </task>
-    <task id="LOCAL-00051" summary="Rename test project name">
-      <created>1661726834148</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+    <task id="LOCAL-00117" summary="Add GetAll function to BookingService.cs">
+      <created>1661837523220</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
       <option name="project" value="LOCAL" />
-      <updated>1661726834149</updated>
+      <updated>1661837523220</updated>
     </task>
-    <task id="LOCAL-00052" summary="Change DateTiemOffset usage to DateTime">
-      <created>1661816908240</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
+    <task id="LOCAL-00118" summary="Adjust route name in CustomerController.cs">
+      <created>1661837538188</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1661816908240</updated>
+      <updated>1661837538188</updated>
     </task>
-    <task id="LOCAL-00053" summary="Change DateTimeOffset usage to DateTime">
-      <created>1661816964480</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
+    <task id="LOCAL-00119" summary="Ignore Child elements in Reservation">
+      <created>1661837551753</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1661816964480</updated>
+      <updated>1661837551753</updated>
     </task>
-    <task id="LOCAL-00054" summary="Change DateTimeOffset usage to DateTime">
-      <created>1661816978756</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
+    <task id="LOCAL-00120" summary="Add BookingController.cs">
+      <created>1661837628079</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1661816978756</updated>
+      <updated>1661837628079</updated>
     </task>
-    <task id="LOCAL-00055" summary="Change Reservation.cs reference to Customer.cs">
-      <created>1661817008711</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
+    <task id="LOCAL-00121" summary="Add UpdateAt initial value to Entity.cs">
+      <created>1661865566284</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1661817008711</updated>
+      <updated>1661865566284</updated>
     </task>
-    <task id="LOCAL-00056" summary="Change DateTimeOffset usage to DateTime">
-      <created>1661817030276</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
+    <task id="LOCAL-00122" summary="Change BirthDate to DateOnly on Customer.cs">
+      <created>1661865589732</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1661817030276</updated>
+      <updated>1661865589732</updated>
     </task>
-    <task id="LOCAL-00057" summary="Change nullable properties to non-nullable">
-      <created>1661817080864</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
+    <task id="LOCAL-00123" summary="Change BirthDate to DateOnly">
+      <created>1661865609991</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1661817080864</updated>
+      <updated>1661865609992</updated>
     </task>
-    <task id="LOCAL-00058" summary="Remove CancunHotelContext.cs">
-      <created>1661817217428</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
+    <task id="LOCAL-00124" summary="Add ReadBookingViewModel.cs">
+      <created>1661877794416</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1661817217428</updated>
+      <updated>1661877794417</updated>
     </task>
-    <task id="LOCAL-00059" summary="Remve CancunHotel.CustomerCare.Service.csproj">
-      <created>1661817227907</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
+    <task id="LOCAL-00125" summary="Rename BookingViewModel.cs to CreateBookingViewModel.cs">
+      <created>1661877810012</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1661817227907</updated>
+      <updated>1661877810012</updated>
     </task>
-    <task id="LOCAL-00060" summary="Add CancunHotel.Application.csproj project">
-      <created>1661817251989</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
+    <task id="LOCAL-00126" summary="Add mapping of ReadBookingViewModel">
+      <created>1661877823263</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
       <option name="project" value="LOCAL" />
-      <updated>1661817251989</updated>
+      <updated>1661877823263</updated>
     </task>
-    <task id="LOCAL-00061" summary="Add ICustomerAppService.cs">
-      <created>1661817281757</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
+    <task id="LOCAL-00127" summary="Update check in and check out on Reservation.cs constructor">
+      <created>1661877862487</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
       <option name="project" value="LOCAL" />
-      <updated>1661817281757</updated>
+      <updated>1661877862487</updated>
     </task>
-    <task id="LOCAL-00062" summary="Add CustomerAppService.cs">
-      <created>1661817331438</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
+    <task id="LOCAL-00128" summary="Update birthdate on Customer.cs constructor">
+      <created>1661877881004</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
       <option name="project" value="LOCAL" />
-      <updated>1661817331438</updated>
+      <updated>1661877881005</updated>
     </task>
-    <task id="LOCAL-00063" summary="Add CustomerViewModel.cs">
-      <created>1661817340852</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
+    <task id="LOCAL-00129" summary="Add mapping to ReadBookingViewModel and Reservation">
+      <created>1661877905418</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
       <option name="project" value="LOCAL" />
-      <updated>1661817340852</updated>
+      <updated>1661877905418</updated>
     </task>
-    <task id="LOCAL-00064" summary="Add AutoMapper profile configuration">
-      <created>1661817359731</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
+    <task id="LOCAL-00130" summary="Fix read and write of DateTime from json on DateTimeJsonConverter.cs">
+      <created>1661877928194</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
       <option name="project" value="LOCAL" />
-      <updated>1661817359731</updated>
+      <updated>1661877928195</updated>
     </task>
-    <task id="LOCAL-00065" summary="Add CreateCustomerViewModel to fixture">
-      <created>1661817381615</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
+    <task id="LOCAL-00131" summary="Change BookingViewModel use to CreateBookingViewModel in  BookingController.cs">
+      <created>1661877966232</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
       <option name="project" value="LOCAL" />
-      <updated>1661817381615</updated>
+      <updated>1661877966232</updated>
     </task>
-    <task id="LOCAL-00066" summary="Add Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Design and Npgsql.EntityFrameworkCore.PostgreSQL nuget packages">
-      <created>1661817416941</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
+    <task id="LOCAL-00132" summary="- Add lookup to Customer when getting all reservations&#10;- Add functions to fix check in and check out hour">
+      <created>1661878020811</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
       <option name="project" value="LOCAL" />
-      <updated>1661817416941</updated>
+      <updated>1661878020811</updated>
     </task>
-    <task id="LOCAL-00067" summary="Add FakeItEasy nuget package">
-      <created>1661817432962</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
+    <task id="LOCAL-00133" summary="Switch BookingViewModel use to ReadBookingViewModel and CreateBookingViewModel">
+      <created>1661878056196</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
       <option name="project" value="LOCAL" />
-      <updated>1661817432962</updated>
+      <updated>1661878056196</updated>
     </task>
-    <task id="LOCAL-00068" summary="Add FluentValidation nuget package">
-      <created>1661817455270</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
+    <task id="LOCAL-00134" summary="- Add DateTimeJsonConverter in JsonOptions&#10;- Add AppContext config to save DateTime with timezone info in postgresql">
+      <created>1661878122090</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
       <option name="project" value="LOCAL" />
-      <updated>1661817455270</updated>
+      <updated>1661878122090</updated>
     </task>
-    <task id="LOCAL-00069" summary="Add CustomerRepository.cs">
-      <created>1661817478841</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
+    <task id="LOCAL-00135" summary="Add function to fix BirthDate hour">
+      <created>1661878140815</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
       <option name="project" value="LOCAL" />
-      <updated>1661817478841</updated>
+      <updated>1661878140815</updated>
     </task>
-    <task id="LOCAL-00070" summary="Update gitignore">
-      <created>1661817500873</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
+    <task id="LOCAL-00136" summary="Change launchBrowser parameter to false">
+      <created>1661878436516</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
       <option name="project" value="LOCAL" />
-      <updated>1661817500873</updated>
+      <updated>1661878436516</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,48 +580,48 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add IUnitOfWork.cs" />
-    <MESSAGE value="Add IRepository.cs" />
-    <MESSAGE value="Ad ICustomerRepository.cs" />
-    <MESSAGE value="Add CancunHotelContext.cs" />
-    <MESSAGE value="Add CancunHotel.Infra.csproj" />
-    <MESSAGE value="Add CancunHotel.CustomerCare.Service.csproj" />
-    <MESSAGE value="Add CancunHotel.CustomerCare.Service and CancunHotel.Infra" />
-    <MESSAGE value="Rename test project name" />
-    <MESSAGE value="Change DateTiemOffset usage to DateTime" />
-    <MESSAGE value="Change Reservation.cs reference to Customer.cs" />
-    <MESSAGE value="Change DateTimeOffset usage to DateTime" />
-    <MESSAGE value="Change nullable properties to non-nullable" />
-    <MESSAGE value="Remove CancunHotelContext.cs" />
-    <MESSAGE value="Remve CancunHotel.CustomerCare.Service.csproj" />
-    <MESSAGE value="Add CancunHotel.Application.csproj project" />
-    <MESSAGE value="Add ICustomerAppService.cs" />
-    <MESSAGE value="Add CustomerAppService.cs" />
-    <MESSAGE value="Add CustomerViewModel.cs" />
-    <MESSAGE value="Add AutoMapper profile configuration" />
-    <MESSAGE value="Add CreateCustomerViewModel to fixture" />
-    <MESSAGE value="Add Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Design and Npgsql.EntityFrameworkCore.PostgreSQL nuget packages" />
-    <MESSAGE value="Add FakeItEasy nuget package" />
-    <MESSAGE value="Add FluentValidation nuget package" />
-    <MESSAGE value="Add CustomerRepository.cs" />
-    <MESSAGE value="Update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore" />
+    <MESSAGE value="Add mapping to BookingViewModel and Reservation" />
+    <MESSAGE value="Add GetByDates query to ReservationRepository.cs" />
+    <MESSAGE value="Add ReservationValidation and BookingValidation to ValidationsConfig.cs" />
+    <MESSAGE value="- Implement Register booking in BookingService.cs&#10;- Implement CheckReservationAvailability in BookingService.cs&#10;- Add CheckReservationAvailability to IBookingService.cs" />
+    <MESSAGE value="Fix datetime timekind" />
+    <MESSAGE value="Add GetAll function to BookingService.cs" />
+    <MESSAGE value="Adjust route name in CustomerController.cs" />
+    <MESSAGE value="Ignore Child elements in Reservation" />
+    <MESSAGE value="Add BookingController.cs" />
+    <MESSAGE value="Add UpdateAt initial value to Entity.cs" />
+    <MESSAGE value="Change BirthDate to DateOnly on Customer.cs" />
+    <MESSAGE value="Change BirthDate to DateOnly" />
+    <MESSAGE value="Add ReadBookingViewModel.cs" />
+    <MESSAGE value="Rename BookingViewModel.cs to CreateBookingViewModel.cs" />
+    <MESSAGE value="Add mapping of ReadBookingViewModel" />
+    <MESSAGE value="Update check in and check out on Reservation.cs constructor" />
+    <MESSAGE value="Update birthdate on Customer.cs constructor" />
+    <MESSAGE value="Add mapping to ReadBookingViewModel and Reservation" />
+    <MESSAGE value="Fix read and write of DateTime from json on DateTimeJsonConverter.cs" />
+    <MESSAGE value="Change BookingViewModel use to CreateBookingViewModel in  BookingController.cs" />
+    <MESSAGE value="- Add lookup to Customer when getting all reservations&#10;- Add functions to fix check in and check out hour" />
+    <MESSAGE value="Switch BookingViewModel use to ReadBookingViewModel and CreateBookingViewModel" />
+    <MESSAGE value="- Add DateTimeJsonConverter in JsonOptions&#10;- Add AppContext config to save DateTime with timezone info in postgresql" />
+    <MESSAGE value="Add function to fix BirthDate hour" />
+    <MESSAGE value="Change launchBrowser parameter to false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change launchBrowser parameter to false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/tests/CancunHotel.Tests/Services/CustomerAppServiceTests.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\tests\CancunHotel.Tests\Services\CustomerAppServiceTests.cs" initialLine="19" containingFunctionPresentation="method 'Should_Register_Customer'">
+          <url>file://$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Context/ApplicationContext.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\src\Infra\CancunHotel.Infra\Context\ApplicationContext.cs" initialLine="61" containingFunctionPresentation="method 'SaveChangesAsync'">
             <startOffsets>
-              <option value="586" />
+              <option value="1721" />
             </startOffsets>
             <endOffsets>
-              <option value="630" />
+              <option value="1872" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
