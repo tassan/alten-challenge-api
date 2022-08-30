@@ -1,5 +1,4 @@
-﻿using System.Runtime.Serialization;
-using CancunHotel.Domain.DomainObjects;
+﻿using CancunHotel.Domain.DomainObjects;
 
 namespace CancunHotel.Domain.Entities;
 
@@ -22,6 +21,15 @@ public class Reservation : Entity
 
     public Reservation(Guid customerId, DateTime checkInDate, DateTime checkOutDate, int guestsAmount)
     {
+        CustomerId = customerId;
+        CheckInDate = checkInDate;
+        CheckOutDate = checkOutDate;
+        GuestsAmount = guestsAmount;
+    }
+    
+    public Reservation(Guid id, Guid customerId, DateTime checkInDate, DateTime checkOutDate, int guestsAmount)
+    {
+        Id = id;
         CustomerId = customerId;
         CheckInDate = checkInDate;
         CheckOutDate = checkOutDate;
