@@ -9,7 +9,7 @@ namespace CancunHotel.Application.AutoMapper
         public ViewModelToDomainMappingProfile()
         {
             CreateMap<CustomerViewModel, Customer>()
-                .ConstructUsing(c => new Customer(c.FirstName, c.Email, c.Email));
+                .ConstructUsing(c => new Customer(c.FirstName, c.Email, c.Email, c.BirthDate));
         }
     }
 }
