@@ -35,4 +35,16 @@ public class CustomerController : ControllerBase
     {
         return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Register(customerViewModel));
     }
+    
+    [HttpPut("customer-management")]
+    public async Task<IActionResult> Put([FromBody]CustomerViewModel customerViewModel)
+    {
+        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Update(customerViewModel));
+    }
+    
+    [HttpDelete("customer-management/{id:guid}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Remove(id));
+    }
 }
