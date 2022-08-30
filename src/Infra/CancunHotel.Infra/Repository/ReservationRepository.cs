@@ -18,4 +18,12 @@ public class ReservationRepository : GenericRepository<Reservation, ApplicationC
             .FirstOrDefaultAsync(r => r.CustomerId == customerId);
 #pragma warning restore CS8603
     }
+
+    public IQueryable<Reservation> GetByDates(DateTime checkIn, DateTime checkOut)
+    {
+        var query = DbSet.AsNoTracking()
+            .Where(r => r.CheckInDate >= checkIn && r.CheckOutDate <= checkOut);
+
+        return query;
+    }
 }
