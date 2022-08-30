@@ -1,4 +1,5 @@
 using System;
+using Bogus;
 using CancunHotel.Domain.Entities;
 using CancunHotel.Tests.Fixtures;
 using FluentAssertions;
@@ -29,6 +30,10 @@ public class CustomerTest : IClassFixture<CustomerFixture>
         customer.Email
             .Should()
             .NotBeEmpty();
+        
+        customer.BirthDate
+            .Should()
+            .NotBe(new DateTime());
     }
 
     [Theory]
@@ -37,7 +42,7 @@ public class CustomerTest : IClassFixture<CustomerFixture>
     [InlineData("Winston", "Churchill", "churchill@eng.gov")]
     public void Test_Customer_Constructor(string firstName, string lastName, string email)
     {
-        var customer = new Customer(firstName, lastName, email);
+        var customer = new Customer(firstName, lastName, email, new Faker().Person.DateOfBirth);
         
         customer.Id
             .GetType()
@@ -55,5 +60,9 @@ public class CustomerTest : IClassFixture<CustomerFixture>
         customer.Email
             .Should()
             .NotBeEmpty();
+
+        customer.BirthDate
+            .Should()
+            .NotBe(new DateTime());
     }
 }
