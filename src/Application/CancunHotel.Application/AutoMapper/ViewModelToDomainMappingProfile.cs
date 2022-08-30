@@ -10,6 +10,9 @@ namespace CancunHotel.Application.AutoMapper
         {
             CreateMap<CustomerViewModel, Customer>()
                 .ConstructUsing(c => new Customer(c.FirstName, c.Email, c.Email, c.BirthDate));
+
+            CreateMap<BookingViewModel, Reservation>()
+                .ConstructUsing(b => new Reservation(b.CustomerId, b.CheckInDate, b.CheckOutDate, b.GuestsAmount));
         }
     }
 }
