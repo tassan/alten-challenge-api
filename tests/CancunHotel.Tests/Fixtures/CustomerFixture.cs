@@ -13,7 +13,7 @@ public class CustomerFixture : IDisposable
             .RuleFor(c => c.FirstName, f => f.Person.FirstName)
             .RuleFor(c => c.LastName, f => f.Person.LastName)
             .RuleFor(c => c.Email, f => f.Person.Email)
-            .RuleFor(c => c.BirthDate, f => f.Person.DateOfBirth)
+            .RuleFor(c => c.BirthDate, f => DateOnly.FromDateTime(f.Person.DateOfBirth))
             .Generate();
     }
     
@@ -23,7 +23,7 @@ public class CustomerFixture : IDisposable
             .RuleFor(c => c.FirstName, f => f.Person.FirstName)
             .RuleFor(c => c.LastName, f => f.Person.LastName)
             .RuleFor(c => c.Email, f => f.Person.Email)
-            .RuleFor(c => c.BirthDate, f => f.Person.DateOfBirth)
+            .RuleFor(c => c.BirthDate, f => DateOnly.FromDateTime(f.Person.DateOfBirth))
             .Generate();
     }
 
