@@ -1,4 +1,5 @@
-﻿using CancunHotel.Domain.DomainObjects;
+﻿using System.Runtime.Serialization;
+using CancunHotel.Domain.DomainObjects;
 
 namespace CancunHotel.Domain.Entities;
 
@@ -8,7 +9,9 @@ public class Reservation : Entity
     public DateTime CheckInDate { get; set; }
     public DateTime CheckOutDate { get; set; }
     public int GuestsAmount { get; set; }
-    
+
+    [IgnoreDataMember] public int DaysReservedCount => (CheckOutDate - CheckInDate).Days;
+
     public Customer Customer { get; set; }
 
     public Reservation(Customer customer)
@@ -17,5 +20,15 @@ public class Reservation : Entity
         CustomerId = customer.Id;
     }
 
-    public Reservation() { }   
+    public Reservation(Guid customerId, DateTime checkInDate, DateTime checkOutDate, int guestsAmount)
+    {
+        CustomerId = customerId;
+        CheckInDate = new DateTime(checkInDate.Year, checkInDate.Month, checkInDate.Day, 0, 0, 0);
+        CheckOutDate = new DateTime(checkOutDate.Year, checkOutDate.Month, checkOutDate.Day, 23, 59, 59);
+        GuestsAmount = guestsAmount;
+    }
+
+    public Reservation()
+    {
+    }
 }
