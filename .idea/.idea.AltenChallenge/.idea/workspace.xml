@@ -7,10 +7,9 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Update gitignore">
+    <list default="true" id="52318f66-4020-4ab4-b882-3601813942e1" name="Changes" comment="Change indentation of Reservation.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltenChallenge.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AltenChallenge.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/CancunHotel.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/CancunHotel.Infra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/CancunHotel.Domain/Entities/Customer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +25,33 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97982ada126b4a44bc33c12235fc663b24fc00/d4/256153f4/Person.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/123735509fa19d358d3971345e1872b6d26687d1b343ad7ca37af43930694c/Guid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1289edfe74d82a7e26cdcefb19d2209064eade34cd2be4021286d3f7f55ba74/FakeAsserter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1e8feaadf5c3fa14d36ea2a638c432a2e1a47b7837d8b83d88303c5d9c15cf/AsyncValueTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97af33e538b92416d330d2761cc7286a751e61b8a8b11f567c646267804c9843/Utf8JsonReader.TryGet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9f3f2539caf1d1d3bc962f51b12a49523c53a6a135dd252df0b23b14b3515df/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Interfaces/IBookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Services/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/ViewModels/CustomerViewModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/DomainObjects/Entity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Customer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Interfaces/IEntity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Repository/CustomerRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Repository/CustomerRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Entities/EntityTest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Entities/ReservationTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Entities/Reservation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Domain/CancunHotel.Domain/Validations/CustomerValidation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Context/ApplicationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Entities/CustomerTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/EntityFixture.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
