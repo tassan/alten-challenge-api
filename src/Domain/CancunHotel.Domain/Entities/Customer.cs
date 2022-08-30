@@ -11,10 +11,11 @@ public class Customer : Entity
 
     public Customer() { }
 
-    public Customer(string firstName, string lastName, string email)
+    public Customer(string firstName, string lastName, string email, DateTime birthDate)
     {
         FirstName = firstName;
         LastName = lastName;
         Email = email;
+        BirthDate = birthDate;
     }
 }
