@@ -8,5 +8,6 @@ public class RegisterCustomerValidation : CustomerValidation
         ValidateFirstName();
         ValidateLastName();
         ValidateEmail();
+        ValidateBirthDate();
     }
 }

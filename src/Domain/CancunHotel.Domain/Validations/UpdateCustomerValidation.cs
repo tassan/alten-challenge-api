@@ -8,5 +8,6 @@ public class UpdateCustomerValidation : CustomerValidation
         ValidateFirstName();
         ValidateLastName();
         ValidateEmail();
+        ValidateBirthDate();
     }
 }
