@@ -11,6 +11,13 @@ public class ReservationRepository : GenericRepository<Reservation, ApplicationC
     {
     }
 
+    public override void Update(Reservation entity)
+    {
+        var reservation = GetById(entity.Id).Result;
+        DbSet.Attach(entity);
+        Context.Entry(entity).CurrentValues.SetValues(reservation);
+    }
+
     public async Task<Reservation> GetByCustomer(Guid customerId)
     {
 #pragma warning disable CS8603
@@ -22,7 +29,7 @@ public class ReservationRepository : GenericRepository<Reservation, ApplicationC
     public IQueryable<Reservation> GetByDates(DateTime checkIn, DateTime checkOut)
     {
         var query = DbSet.AsNoTracking()
-            .Where(r => r.CheckInDate >= checkIn && r.CheckOutDate <= checkOut);
+            .Where(r => r.CheckInDate >= checkIn || r.CheckOutDate <= checkOut);
 
         return query;
     }
