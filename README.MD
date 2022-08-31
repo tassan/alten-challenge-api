@@ -92,6 +92,8 @@ This project is configured to auto-deploy on Azure every time a new push is made
 
 The deployed API uses a postgresql hosted on heroku.
 
+You can see the deployed version here [Swagger UI](https://cancun-hotel-api.azurewebsites.net/swagger/index.html).
+
 ## Goals to achieve 99.99% Uptime
 
 Preliminary tests (including failed/excluded) of the current state of the API, hosted in Azure, gave me an average 79.71% of availability.
