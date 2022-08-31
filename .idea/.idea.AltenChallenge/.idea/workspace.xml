@@ -8,8 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Add CORS Allowed Origins and Rate Limit configuration">
+      <change afterPath="$PROJECT_DIR$/AltenChallenge.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +56,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de97975f2ca29ba5d2e21cddf286a3e80396b27e8e9e325884eb71c8f6669e/AggregateException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Services/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Application/CancunHotel.Application/Services/BookingService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Context/ApplicationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Factory/ApplicationContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/ReservationFixture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Services/BookingServiceTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Services/CustomerAppServiceTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -79,20 +71,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RiderDotCoverContinuousTestingPageId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Azure - Publish Web App.Publish CancunHotel.Services.API to Azure">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.CancunHotel.Services.API">
     <configuration name="Publish CancunHotel.Services.API to Azure" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
       <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" />
       <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="5309a527-3fb2-472d-a2a4-53a1dee2a721" />
@@ -106,7 +98,7 @@
       <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/5309a527-3fb2-472d-a2a4-53a1dee2a721/resourceGroups/alten-rg/providers/Microsoft.Web/serverfarms/ASP-altenrg-8919" />
       <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
       <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
       <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
       <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
       <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
@@ -185,6 +177,7 @@
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
       <workItem from="1661915648882" duration="14018000" />
+      <workItem from="1661966188366" duration="4879000" />
     </task>
     <task id="LOCAL-00122" summary="Change BirthDate to DateOnly on Customer.cs">
       <created>1661865589732</created>
