@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CancunHotel.Services.API.Controllers;
 
 [ApiController]
-public class CustomerController : ControllerBase
+public class CustomerController : ApiController
 {
     private readonly ICustomerAppService _customerAppService;
 
@@ -14,7 +14,7 @@ public class CustomerController : ControllerBase
     {
         _customerAppService = customerAppService;
     }
-    
+
     [AllowAnonymous]
     [HttpGet("customer-management")]
     public async Task<IEnumerable<CustomerViewModel>> Get()
@@ -28,22 +28,26 @@ public class CustomerController : ControllerBase
     {
         return await _customerAppService.GetById(id);
     }
-    
+
     [HttpPost("customer-management")]
-    public async Task<IActionResult> Post([FromBody]CustomerViewModel customerViewModel)
+    public async Task<IActionResult> Post([FromBody] CustomerViewModel customerViewModel)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Register(customerViewModel));
+        return !ModelState.IsValid
+            ? CustomResponse(ModelState)
+            : CustomResponse(await _customerAppService.Register(customerViewModel));
     }
-    
+
     [HttpPut("customer-management")]
-    public async Task<IActionResult> Put([FromBody]CustomerViewModel customerViewModel)
+    public async Task<IActionResult> Put([FromBody] CustomerViewModel customerViewModel)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Update(customerViewModel));
+        return !ModelState.IsValid
+            ? CustomResponse(ModelState)
+            : CustomResponse(await _customerAppService.Update(customerViewModel));
     }
-    
+
     [HttpDelete("customer-management/{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _customerAppService.Remove(id));
+        return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _customerAppService.Remove(id));
     }
 }
