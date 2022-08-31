@@ -10,6 +10,11 @@ public class ApplicationContext : DbContext, IUnitOfWork
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
 
+    public ApplicationContext()
+    {
+        
+    }
+    
     public ApplicationContext(DbContextOptions options)
         : base(options)
     {
