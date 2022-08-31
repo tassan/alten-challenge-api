@@ -21,6 +21,7 @@ builder.Services.AddDatabaseConfiguration(builder.Configuration);
 builder.Services.AddAutoMapperConfiguration();
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddDependencyInjectionConfiguration();
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 
