@@ -2,8 +2,6 @@
 
 This is the repository with my solution for the Alten Challenge
 
-
-
 ## Table of Contents
 
 [About](#About)
@@ -27,14 +25,69 @@ The project is structured in layers to segregate the responsibilities, with this
 * **Services**: The Services layer is the application's boundary, it defines the available operations and responses for each of them. The API its located here with its endpoints, as a example, this layer could have a Console App service for the user to input data, instead of an Web API.
 * **Tests**: The Tests layer holds every test necessary validate business objects, the application services and even infrastructure. Unit Tests, Integration Tests and Regression tests can be stored in this layer.
 
+
+
+## How to Use
+
+1. Clone the Repository
+
+```shell
+git clone https://github.com/tassan/alten-challenge-api.git
+```
+
+2. Configure database connection in the appsettings.json file
+
+```json
+ "ConnectionStrings": {
+    "DefaultConnection": "Server=[server];Port=[port];Database=[database];User Id=[user];Password=[password];"
+  },
+```
+
+*Change the values to your Postgresql connection*
+
+3. Restore project package, in the root folder use the command:
+
+```shell
+dotnet restore
+```
+
+4. Build the project, in the root folder use the command:
+
+```shell
+dotnet build
+```
+
+5. Run the tests (Optional), in the root folder use the command:
+
+```shell
+dotnet test
+```
+
+6. Run te project Migrations
+
+```shell
+dotnet ef database update --project src\Infra\CancunHotel.Infra\CancunHotel.Infra.csproj --startup-project src\Services\CancunHotel.Services.API\CancunHotel.Services.API.csproj --context CancunHotel.Infra.Context.ApplicationContext --configuration Debug "20220831003919_Remove deleted field"
+```
+*This command use the last migration file in project*
+
+7. Run the project, in the root folder use the command:
+
+```shell
+dotnet run
+```
+
+The project uses port `7236` for HTTPS and `5255` for HTTP in `localhost`. If you want, you can change these ports in `launchSettings.json` in the `CancunHotel.Service.API`.
+
+## Deployment
+
+This project is configured to auto-deploy on Azure every time a new push is made to the `main` branch of this repo.
+
 ## Tech Used
 
 * [.NET 6.0](https://dotnet.microsoft.com/en-us/download)
 * [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
 * [Npgsql](https://www.npgsql.org/index.html)
-
 * [PostgreSQL](https://www.postgresql.org/)
-
 * [xUnit](https://xunit.net/)
 * [Bogus](https://github.com/bchavez/Bogus)
 * [Moq](https://github.com/moq/moq4)
@@ -42,3 +95,4 @@ The project is structured in layers to segregate the responsibilities, with this
 * [FakeItEasy](https://fakeiteasy.github.io/)
 * [Fluent Assertions](https://fluentassertions.com/)
 * [Fluent Validation](https://fluentvalidation.net/)
+* [Azure](https://azure.microsoft.com/)
