@@ -63,7 +63,7 @@ dotnet build
 dotnet test
 ```
 
-6. Run te project Migrations
+6. Run the project Migrations
 
 ```shell
 dotnet ef database update --project src\Infra\CancunHotel.Infra\CancunHotel.Infra.csproj --startup-project src\Services\CancunHotel.Services.API\CancunHotel.Services.API.csproj --context CancunHotel.Infra.Context.ApplicationContext --configuration Debug "20220831003919_Remove deleted field"
