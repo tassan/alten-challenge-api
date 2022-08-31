@@ -1,5 +1,4 @@
 using System.Text.Json;
-using AspNetCoreRateLimit;
 using CancunHotel.Application.Converter;
 using CancunHotel.Services.API.Configurations;
 
@@ -23,15 +22,12 @@ builder.Services.AddAutoMapperConfiguration();
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddDependencyInjectionConfiguration();
 builder.Services.AddMemoryCache();
-builder.Services.AddRateLimitConfiguration(builder.Configuration);
 
 var app = builder.Build();
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 // Configure
-
-app.UseClientRateLimiting();
 
 if (app.Environment.IsDevelopment())
 {
