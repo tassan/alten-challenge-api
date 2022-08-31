@@ -24,6 +24,7 @@ builder.Services.AddAutoMapperConfiguration();
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddDependencyInjectionConfiguration();
 builder.Services.AddMemoryCache();
+builder.Services.AddApplicationInsightsTelemetry();
 
 var app = builder.Build();
 
