@@ -2,6 +2,8 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using CancunHotel.Application.Converter;
 using CancunHotel.Services.API.Configurations;
+using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,7 @@ builder.Services.AddDependencyInjectionConfiguration();
 builder.Services.AddMemoryCache();
 builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddResponseCompressionConfiguration();
+builder.Services.AddHealthChecksConfiguration(builder.Configuration);
 
 var app = builder.Build();
 
@@ -63,6 +66,16 @@ app.UseCors(policyBuilder =>
         .AllowAnyMethod()
         .AllowCredentials()
         .SetPreflightMaxAge(TimeSpan.FromSeconds(2520));
+});
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHealthChecks("/healthz", new HealthCheckOptions
+    {
+        Predicate = _ => true,
+        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    });
+    endpoints.MapHealthChecksUI(options => { options.UIPath = "/dashboard"; });
 });
 
 app.Run();
