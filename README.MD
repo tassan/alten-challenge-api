@@ -10,6 +10,8 @@ This is the repository with my solution for the Alten Challenge
 
 [Tech Used](#Tech-Used)
 
+[How to Use](#How-to-Use)
+
 ## About
 
 This API is fort he fictional very last hotel in Cancun, the hotel IT team will manage it.  This is a RESTful API with the basic CRUD operations, the enduser is capable of creating and control customers, reservations and check reservations availability.
