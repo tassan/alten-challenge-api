@@ -116,6 +116,8 @@ To achieve that kind of performance, some of the changes who could help are:
 
 ## Future Improvements
 
+A list of improvements I'd like to have done if it was possible:
+
 * The unit test coverage right covers only 45-50% of the code. Increasing the coverage its very important;
 * Improve the deploy strategy:
   * Deploy only when the code was changed instead of every push to the `main` branch;
