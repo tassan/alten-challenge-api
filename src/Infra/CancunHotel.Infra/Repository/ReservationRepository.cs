@@ -29,7 +29,7 @@ public class ReservationRepository : GenericRepository<Reservation, ApplicationC
     public IQueryable<Reservation> GetByDates(DateTime checkIn, DateTime checkOut)
     {
         var query = DbSet.AsNoTracking()
-            .Where(r => r.CheckInDate >= checkIn || r.CheckOutDate <= checkOut);
+            .Where(r => r.CheckOutDate.ToLocalTime() >= checkIn && r.CheckInDate.ToLocalTime() <= checkOut);
 
         return query;
     }
