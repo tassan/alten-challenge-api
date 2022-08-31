@@ -36,7 +36,7 @@ public class BookingService : CommandHandler, IBookingService
         NormalizeCheckInTime(reservation);
         NormalizeCheckOutTime(reservation);
 
-        if (CheckReservationAvailability(reservation.CheckInDate, reservation.CheckOutDate))
+        if (!CheckReservationAvailability(reservation.CheckInDate, reservation.CheckOutDate))
         {
             AddError("There's already one reservation for the desired date");
             return ValidationResult;
@@ -56,7 +56,8 @@ public class BookingService : CommandHandler, IBookingService
 
     public bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut)
     {
-        return _reservationRepository.GetByDates(checkIn, checkOut).Any();
+        var available = !_reservationRepository.GetByDates(checkIn, checkOut).Any();
+        return available;
     }
 
     public async Task<IEnumerable<ReadBookingViewModel>> GetAll()
