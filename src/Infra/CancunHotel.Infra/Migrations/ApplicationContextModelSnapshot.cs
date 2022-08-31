@@ -34,9 +34,6 @@ namespace CancunHotel.Infra.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("boolean");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
@@ -75,9 +72,6 @@ namespace CancunHotel.Infra.Migrations
                     b.Property<Guid>("CustomerId")
                         .HasColumnType("uuid");
 
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("boolean");
-
                     b.Property<int>("GuestsAmount")
                         .HasColumnType("integer");
 
@@ -86,20 +80,7 @@ namespace CancunHotel.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
-
                     b.ToTable("Reservations");
-                });
-
-            modelBuilder.Entity("CancunHotel.Domain.Entities.Reservation", b =>
-                {
-                    b.HasOne("CancunHotel.Domain.Entities.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
                 });
 #pragma warning restore 612, 618
         }
