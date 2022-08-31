@@ -7,13 +7,13 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Change CheckAvailability from POST to GET">
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Add Response Compression Configuration in Program.cs">
       <change afterPath="$PROJECT_DIR$/AltenChallenge.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Configurations/ResponseCompressionConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" afterDir="false" />
     </list>
@@ -59,6 +59,7 @@
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -182,35 +183,7 @@
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
       <workItem from="1661915648882" duration="14018000" />
-      <workItem from="1661966188366" duration="7921000" />
-    </task>
-    <task id="LOCAL-00133" summary="Switch BookingViewModel use to ReadBookingViewModel and CreateBookingViewModel">
-      <created>1661878056196</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878056196</updated>
-    </task>
-    <task id="LOCAL-00134" summary="- Add DateTimeJsonConverter in JsonOptions&#10;- Add AppContext config to save DateTime with timezone info in postgresql">
-      <created>1661878122090</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878122090</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Add function to fix BirthDate hour">
-      <created>1661878140815</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878140815</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Change launchBrowser parameter to false">
-      <created>1661878436516</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878436516</updated>
+      <workItem from="1661966188366" duration="11846000" />
     </task>
     <task id="LOCAL-00137" summary="Remove Deleted property">
       <created>1661891897326</created>
@@ -527,7 +500,35 @@
       <option name="project" value="LOCAL" />
       <updated>1661975680979</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Add Microsoft.AspNetCore.ResponseCompression nuget package">
+      <created>1661976270181</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1661976270181</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Add ResponseCompressionConfig.cs">
+      <created>1661976279725</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1661976279725</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Update workspace.xml">
+      <created>1661976298504</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1661976298504</updated>
+    </task>
+    <task id="LOCAL-00185" summary="Add Response Compression Configuration in Program.cs">
+      <created>1661976313386</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1661976313386</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,9 +606,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Mapping to UpdateBookingViewModel" />
-    <MESSAGE value="Change Context scope from private do protected in GenericRepository.cs" />
-    <MESSAGE value="Add Id property to ReadBookingViewModel.cs" />
     <MESSAGE value="Remove deleted filter for GetAll in CustomerAppService.cs" />
     <MESSAGE value="Add Remove deleted field migration" />
     <MESSAGE value="- Add functions to create Customer and CustomerViewModel collections&#10;- Create Invalid CustomerViewModel" />
@@ -627,10 +625,13 @@
     <MESSAGE value="Add ApiController.cs" />
     <MESSAGE value="Implement ApiController class in BookingController.cs" />
     <MESSAGE value="Implement ApiController class in CustomerController.cs" />
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add Build and Deploy Badge to README.MD" />
     <MESSAGE value="Change CheckAvailability from POST to GET" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change CheckAvailability from POST to GET" />
+    <MESSAGE value="Add Microsoft.AspNetCore.ResponseCompression nuget package" />
+    <MESSAGE value="Add ResponseCompressionConfig.cs" />
+    <MESSAGE value="Update workspace.xml" />
+    <MESSAGE value="Add Response Compression Configuration in Program.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Response Compression Configuration in Program.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
