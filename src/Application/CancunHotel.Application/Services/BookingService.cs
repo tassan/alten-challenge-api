@@ -54,11 +54,8 @@ public class BookingService : CommandHandler, IBookingService
         return readBookingViewModel;
     }
 
-    public bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut)
-    {
-        var available = !_reservationRepository.GetByDates(checkIn, checkOut).Any();
-        return available;
-    }
+    public bool CheckReservationAvailability(DateTime checkIn, DateTime checkOut) => !_reservationRepository
+        .GetByDates(checkIn.ToUniversalTime(), checkOut.ToUniversalTime()).Any();
 
     public async Task<IEnumerable<ReadBookingViewModel>> GetAll()
     {
@@ -90,7 +87,7 @@ public class BookingService : CommandHandler, IBookingService
     {
         var reservation = await _reservationRepository.GetById(id);
         reservation.Customer = await _customerRepository.GetById(reservation.CustomerId);
-        
+
         if (reservation is null)
         {
             AddError("The reservation doesn't exists.");
