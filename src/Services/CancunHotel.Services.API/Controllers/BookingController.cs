@@ -59,7 +59,7 @@ public class BookingController : ApiController
     }
 
     [AllowAnonymous]
-    [HttpPost("check-availability")]
+    [HttpGet("check-availability")]
     public IActionResult CheckAvailability([FromQuery] DateTime checkIn, [FromQuery] DateTime checkOut)
     {
         var isAvailable = _bookingService.CheckReservationAvailability(checkIn, checkOut);
