@@ -9,12 +9,12 @@ public static class ReservationFixture
     public static Reservation CreateValidReservation()
     {
         var checkInDate = new Faker().Date.Soon(1, DateTime.UtcNow);
-        var checkOutDate = new Faker().Date.Soon(30, checkInDate);
+        var checkOutDate = new Faker().Date.Soon(3, checkInDate);
         
         return new Faker<Reservation>()
             .RuleFor(r => r.CheckInDate, checkInDate)
             .RuleFor(r => r.CheckOutDate, checkOutDate)
             .RuleFor(r => r.GuestsAmount, f => f.Random.Int(1, 4))
-            .RuleFor(r => r.Customer, CustomerFixture.CreateCustomer);
+            .RuleFor(r => r.Customer, CustomerFixture.CreateCustomer());
     }
 }
