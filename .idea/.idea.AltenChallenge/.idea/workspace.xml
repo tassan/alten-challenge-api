@@ -7,13 +7,15 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Add Response Compression Configuration in Program.cs">
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Update README.MD">
       <change afterPath="$PROJECT_DIR$/AltenChallenge.sln.DotSettings.user" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Configurations/HealthChecksConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" afterDir="false" />
     </list>
@@ -183,35 +185,7 @@
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
       <workItem from="1661915648882" duration="14018000" />
-      <workItem from="1661966188366" duration="11846000" />
-    </task>
-    <task id="LOCAL-00137" summary="Remove Deleted property">
-      <created>1661891897326</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1661891897326</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Update test target">
-      <created>1661891929222</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1661891929223</updated>
-    </task>
-    <task id="LOCAL-00139" summary="Add UpdateBookingViewModel.cs">
-      <created>1661891942303</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1661891942304</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Override Update method to update only changed fields">
-      <created>1661891972961</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1661891972961</updated>
+      <workItem from="1661966188366" duration="13206000" />
     </task>
     <task id="LOCAL-00141" summary="Add new constructor to Reservation.cs">
       <created>1661892004547</created>
@@ -528,7 +502,35 @@
       <option name="project" value="LOCAL" />
       <updated>1661976313386</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Update workspace.xml">
+      <created>1661981848393</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1661981848393</updated>
+    </task>
+    <task id="LOCAL-00187" summary="Update README.MD">
+      <created>1661981875333</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1661981875333</updated>
+    </task>
+    <task id="LOCAL-00188" summary="Update README.MD">
+      <created>1661981958237</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1661981958237</updated>
+    </task>
+    <task id="LOCAL-00189" summary="Update README.MD">
+      <created>1661982155279</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1661982155279</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +620,6 @@
     <MESSAGE value="Fix CheckReservationAvailability in BookingService.cs" />
     <MESSAGE value="Fix GetByDates in ReservationRepository.cs" />
     <MESSAGE value="Update README.MD table of contents" />
-    <MESSAGE value="Update README.MD" />
     <MESSAGE value="Add Application Insights configuration in Program.cs" />
     <MESSAGE value="Fix typo in README.MD" />
     <MESSAGE value="Update table of contents in README.MD" />
@@ -629,9 +630,10 @@
     <MESSAGE value="Change CheckAvailability from POST to GET" />
     <MESSAGE value="Add Microsoft.AspNetCore.ResponseCompression nuget package" />
     <MESSAGE value="Add ResponseCompressionConfig.cs" />
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add Response Compression Configuration in Program.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Response Compression Configuration in Program.cs" />
+    <MESSAGE value="Update workspace.xml" />
+    <MESSAGE value="Update README.MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.MD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
