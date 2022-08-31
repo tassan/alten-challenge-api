@@ -25,6 +25,7 @@ builder.Services.AddSwaggerConfiguration();
 builder.Services.AddDependencyInjectionConfiguration();
 builder.Services.AddMemoryCache();
 builder.Services.AddApplicationInsightsTelemetry();
+builder.Services.AddResponseCompressionConfiguration();
 
 var app = builder.Build();
 
@@ -36,6 +37,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
+
+app.UseResponseCompression();
 
 app.UseHttpsRedirection();
 
