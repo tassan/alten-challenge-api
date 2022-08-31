@@ -2,6 +2,8 @@
 
 This is the repository with my solution for the Alten Challenge
 
+[![Build and deploy ASP.Net Core app to Azure Web App - cancun-hotel-api](https://github.com/tassan/alten-challenge-api/actions/workflows/main_cancun-hotel-api.yml/badge.svg)](https://github.com/tassan/alten-challenge-api/actions/workflows/main_cancun-hotel-api.yml)
+
 ## Table of Contents
 
 [About](#About)
