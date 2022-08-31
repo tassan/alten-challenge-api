@@ -7,10 +7,11 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Add BookingServiceTests.cs">
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Change test fact to theory and testing more scenarios of invalid check in and check out dates">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/BookingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/BookingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CancunHotel.Tests/Services/BookingServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CancunHotel.Tests/Services/BookingServiceTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Context/ApplicationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/ReservationFixture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Services/BookingServiceTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Services/CustomerAppServiceTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -132,21 +134,7 @@
       <workItem from="1661873877377" duration="21555000" />
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
-      <workItem from="1661915648882" duration="7017000" />
-    </task>
-    <task id="LOCAL-00115" summary="- Implement Register booking in BookingService.cs&#10;- Implement CheckReservationAvailability in BookingService.cs&#10;- Add CheckReservationAvailability to IBookingService.cs">
-      <created>1661835522379</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1661835522379</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Fix datetime timekind">
-      <created>1661837504497</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1661837504498</updated>
+      <workItem from="1661915648882" duration="10619000" />
     </task>
     <task id="LOCAL-00117" summary="Add GetAll function to BookingService.cs">
       <created>1661837523220</created>
@@ -477,67 +465,77 @@
       <option name="project" value="LOCAL" />
       <updated>1661922224643</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Update workspace.xml">
+      <created>1661922810869</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1661922810869</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Change test fact to theory and testing more scenarios of invalid check in and check out dates">
+      <created>1661922859956</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1661922859956</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="86" />
+    <option name="coveragePercentColumnWidth" value="88" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="232" />
+    <option name="symbolColumnWidth" value="238" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Application 45% 116/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Services 23% 117/151" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Tests 0% 274/274" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Services 23% 117/151" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="BookingService 41% 48/82" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 18% 848/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="CancunHotel.Application 23% 163/211" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Services 23% 117/151" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="BookingService 41% 48/82" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Register(CreateBookingViewModel) 80% 3/15" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 9% 940/1035" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -559,7 +557,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add function to fix BirthDate hour" />
     <MESSAGE value="Change launchBrowser parameter to false" />
     <MESSAGE value="Remove Deleted property" />
     <MESSAGE value="Update test target" />
@@ -582,51 +579,26 @@
     <MESSAGE value="Add CustomerAppService Tests to basic crud operations" />
     <MESSAGE value="Fix rule for customer generation in ReservationFixture.cs" />
     <MESSAGE value="Fix CheckReservationAvailability in BookingService.cs" />
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add BookingServiceTests.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BookingServiceTests.cs" />
+    <MESSAGE value="Update workspace.xml" />
+    <MESSAGE value="Change test fact to theory and testing more scenarios of invalid check in and check out dates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change test fact to theory and testing more scenarios of invalid check in and check out dates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/CustomerAppService.cs</url>
-          <line>55</line>
-          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\src\Application\CancunHotel.Application\Services\CustomerAppService.cs" initialLine="55" containingFunctionPresentation="method 'Register'">
+          <url>file://$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\src\Infra\CancunHotel.Infra\Repository\ReservationRepository.cs" initialLine="33" containingFunctionPresentation="method 'GetByDates'">
             <startOffsets>
-              <option value="1769" />
+              <option value="1113" />
             </startOffsets>
             <endOffsets>
-              <option value="1803" />
+              <option value="1126" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs</url>
-          <line>116</line>
-          <properties documentPath="C:\Users\flavio.filho\AppData\Roaming\JetBrains\Rider2022.2\resharper-host\SourcesCache\5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164\DbContext.cs" initialLine="116" containingFunctionPresentation="constructor 'DbContext'">
-            <startOffsets>
-              <option value="6168" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6208" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Application/CancunHotel.Application/Services/CustomerAppService.cs</url>
-          <line>43</line>
-          <properties documentPath="C:\Users\flavio.filho\RiderProjects\AltenChallenge\src\Application\CancunHotel.Application\Services\CustomerAppService.cs" initialLine="43" containingFunctionPresentation="method 'Register'">
-            <startOffsets>
-              <option value="1350" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1424" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
