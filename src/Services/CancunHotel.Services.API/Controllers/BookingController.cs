@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CancunHotel.Services.API.Controllers;
 
 [ApiController]
-public class BookingController : ControllerBase
+public class BookingController : ApiController
 {
     private readonly IBookingService _bookingService;
 
@@ -19,28 +19,32 @@ public class BookingController : ControllerBase
     [HttpGet("booking-management")]
     public async Task<IActionResult> GetAll()
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _bookingService.GetAll());
+        return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _bookingService.GetAll());
     }
-    
+
     [AllowAnonymous]
     [HttpPost("booking-management")]
     public async Task<IActionResult> Post([FromBody] CreateBookingViewModel bookingViewModel)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _bookingService.Register(bookingViewModel));
+        return !ModelState.IsValid
+            ? CustomResponse(ModelState)
+            : CustomResponse(await _bookingService.Register(bookingViewModel));
     }
-    
+
     [AllowAnonymous]
     [HttpPut("booking-management")]
     public async Task<IActionResult> Put([FromBody] UpdateBookingViewModel bookingViewModel)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _bookingService.Update(bookingViewModel));
+        return !ModelState.IsValid
+            ? CustomResponse(ModelState)
+            : CustomResponse(await _bookingService.Update(bookingViewModel));
     }
-    
+
     [AllowAnonymous]
     [HttpDelete("booking-management/{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
-        return !ModelState.IsValid ? BadRequest(ModelState) : Ok(await _bookingService.Remove(id));
+        return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(await _bookingService.Remove(id));
     }
 
     [AllowAnonymous]
@@ -51,7 +55,7 @@ public class BookingController : ControllerBase
 
         if (reservation is null) return NotFound("We couldn't find any reservation for the entered user e-mail");
 
-        return Ok(reservation);
+        return CustomResponse(reservation);
     }
 
     [AllowAnonymous]
@@ -60,7 +64,7 @@ public class BookingController : ControllerBase
     {
         var isAvailable = _bookingService.CheckReservationAvailability(checkIn, checkOut);
 
-        return Ok(isAvailable
+        return CustomResponse(isAvailable
             ? $"There's already one reservation for the desired date of {checkIn} to {checkOut}"
             : $"The desired date of {checkIn} to {checkOut} is available to reservation");
     }
