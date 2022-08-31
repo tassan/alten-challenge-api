@@ -49,4 +49,14 @@ app.MapControllers();
 
 app.UseSwaggerSetup();
 
+app.UseCors(policyBuilder =>
+{
+    policyBuilder
+        .WithOrigins(builder.Configuration["CorsAllowedOrigins"].Split(','))
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
+        .SetPreflightMaxAge(TimeSpan.FromSeconds(2520));
+});
+
 app.Run();
