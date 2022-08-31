@@ -7,13 +7,13 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Update table of contents in README.MD">
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Change CheckAvailability from POST to GET">
       <change afterPath="$PROJECT_DIR$/AltenChallenge.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/ApiController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Configurations/ResponseCompressionConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" afterDir="false" />
     </list>
@@ -56,6 +56,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de97975f2ca29ba5d2e21cddf286a3e80396b27e8e9e325884eb71c8f6669e/AggregateException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/BookingController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,6 +82,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.504",
     "full.screen.before.presentation.mode": "false",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -178,49 +182,7 @@
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
       <workItem from="1661915648882" duration="14018000" />
-      <workItem from="1661966188366" duration="6393000" />
-    </task>
-    <task id="LOCAL-00127" summary="Update check in and check out on Reservation.cs constructor">
-      <created>1661877862487</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1661877862487</updated>
-    </task>
-    <task id="LOCAL-00128" summary="Update birthdate on Customer.cs constructor">
-      <created>1661877881004</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1661877881005</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Add mapping to ReadBookingViewModel and Reservation">
-      <created>1661877905418</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1661877905418</updated>
-    </task>
-    <task id="LOCAL-00130" summary="Fix read and write of DateTime from json on DateTimeJsonConverter.cs">
-      <created>1661877928194</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1661877928195</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Change BookingViewModel use to CreateBookingViewModel in  BookingController.cs">
-      <created>1661877966232</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1661877966232</updated>
-    </task>
-    <task id="LOCAL-00132" summary="- Add lookup to Customer when getting all reservations&#10;- Add functions to fix check in and check out hour">
-      <created>1661878020811</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1661878020811</updated>
+      <workItem from="1661966188366" duration="7921000" />
     </task>
     <task id="LOCAL-00133" summary="Switch BookingViewModel use to ReadBookingViewModel and CreateBookingViewModel">
       <created>1661878056196</created>
@@ -523,7 +485,49 @@
       <option name="project" value="LOCAL" />
       <updated>1661971562077</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Add ApiController.cs">
+      <created>1661974571728</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1661974571728</updated>
+    </task>
+    <task id="LOCAL-00177" summary="Implement ApiController class in BookingController.cs">
+      <created>1661974595771</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1661974595771</updated>
+    </task>
+    <task id="LOCAL-00178" summary="Implement ApiController class in CustomerController.cs">
+      <created>1661974629451</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1661974629451</updated>
+    </task>
+    <task id="LOCAL-00179" summary="Update workspace.xml">
+      <created>1661974639988</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1661974639988</updated>
+    </task>
+    <task id="LOCAL-00180" summary="Add Build and Deploy Badge to README.MD">
+      <created>1661974809327</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1661974809327</updated>
+    </task>
+    <task id="LOCAL-00181" summary="Change CheckAvailability from POST to GET">
+      <created>1661975680978</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1661975680979</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,11 +605,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Remove validation based on Deleted property" />
-    <MESSAGE value="Add Update, Remove and GetReservationByEmail to IBookingService.cs" />
-    <MESSAGE value="Add implementation of Update, Remove and GetReservationByEmail in BookingService.cs" />
-    <MESSAGE value="Add GetAll, Update, Delete and CheckReservation to BookingController.cs" />
-    <MESSAGE value="Remove Delete Customer method in Customer.cs" />
     <MESSAGE value="Add Mapping to UpdateBookingViewModel" />
     <MESSAGE value="Change Context scope from private do protected in GenericRepository.cs" />
     <MESSAGE value="Add Id property to ReadBookingViewModel.cs" />
@@ -624,9 +623,14 @@
     <MESSAGE value="Update README.MD" />
     <MESSAGE value="Add Application Insights configuration in Program.cs" />
     <MESSAGE value="Fix typo in README.MD" />
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Update table of contents in README.MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update table of contents in README.MD" />
+    <MESSAGE value="Add ApiController.cs" />
+    <MESSAGE value="Implement ApiController class in BookingController.cs" />
+    <MESSAGE value="Implement ApiController class in CustomerController.cs" />
+    <MESSAGE value="Update workspace.xml" />
+    <MESSAGE value="Add Build and Deploy Badge to README.MD" />
+    <MESSAGE value="Change CheckAvailability from POST to GET" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change CheckAvailability from POST to GET" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
