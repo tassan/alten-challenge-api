@@ -66,7 +66,7 @@ public class BookingServiceTests
             .Setup(r => r.UnitOfWork.CommitAsync()).Returns(Task.FromResult(true));
 
         var result = await service.Register(createBookingVm);
-        _outputHelper.WriteLine(string.Join(",", result.Errors));
+        _outputHelper.WriteLine(string.Join(", ", result.Errors));
         Assert.True(result.IsValid);
         mocker.GetMock<IReservationRepository>().Verify(r => r.Add(reservation), Times.Once);
     }
@@ -108,17 +108,15 @@ public class BookingServiceTests
             .Setup(r => r.UnitOfWork.CommitAsync()).Returns(Task.FromResult(true));
 
         var result = await service.Register(createBookingVm);
-        _outputHelper.WriteLine(string.Join(",", result.Errors));
+        _outputHelper.WriteLine(string.Join(", ", result.Errors));
         Assert.False(result.IsValid);
         mocker.GetMock<IReservationRepository>().Verify(r => r.Add(reservation), Times.Never);
     }
 
-    [Fact]
-    public async Task Given_CheckIn_And_CheckOut_Dates_AlreadyTaken_ShouldNot_Register_Reservation()
+    [Theory, MemberData(nameof(IncorrectCheckInDates))]
+    public async Task Given_CheckIn_And_CheckOut_Dates_AlreadyTaken_ShouldNot_Register_Reservation(DateTime checkInDate, DateTime checkOutDate)
     {
         var customer = CustomerFixture.CreateCustomer();
-        var checkInDate = new Faker().Date.Soon(1, DateTime.UtcNow);
-        var checkOutDate = checkInDate.AddDays(3);
         var guests = new Faker().Random.Int(1, 10);
         var reservation = new Reservation(customer.Id,
             checkInDate,
@@ -170,8 +168,15 @@ public class BookingServiceTests
             .Setup(r => r.UnitOfWork.CommitAsync()).Returns(Task.FromResult(true));
 
         var result = await service.Register(createBookingVm);
-        _outputHelper.WriteLine(string.Join(",", result.Errors));
+        _outputHelper.WriteLine(string.Join(", ", result.Errors));
         Assert.False(result.IsValid);
         mocker.GetMock<IReservationRepository>().Verify(r => r.Add(reservation), Times.Never);
     }
+
+    public static readonly object[][] IncorrectCheckInDates = {
+        new object[] { DateTime.UtcNow, DateTime.UtcNow.AddDays(0) },
+        new object[] { DateTime.UtcNow, DateTime.UtcNow.AddDays(-1) },
+        new object[] { DateTime.UtcNow, DateTime.UtcNow.AddDays(10) },
+        new object[] { DateTime.UtcNow.AddDays(60), DateTime.UtcNow.AddDays(3) },
+    };
 }
