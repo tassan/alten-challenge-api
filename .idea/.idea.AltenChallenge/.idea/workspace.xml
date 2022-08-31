@@ -7,15 +7,12 @@
     <projectFile profileName="IIS Express">src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Add CORS configuration">
-      <change afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Configurations/RateLimitConfig.cs" afterDir="false" />
+    <list default="true" id="55559824-76a7-4e48-a55c-176328ee802f" name="Changes" comment="Update README.MD table of contents">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AltenChallenge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infra/CancunHotel.Infra/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Factory/ApplicationContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Factory/ApplicationContextFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/123735509fa19d358d3971345e1872b6d26687d1b343ad7ca37af43930694c/Guid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1289edfe74d82a7e26cdcefb19d2209064eade34cd2be4021286d3f7f55ba74/FakeAsserter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1e8feaadf5c3fa14d36ea2a638c432a2e1a47b7837d8b83d88303c5d9c15cf/AsyncValueTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2c29afc59b95dea2c5949ef43078128af9899da62f72d595887bf7621b0786/CorsPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/538811d0fba15c61b743814ea8b7193d48cfbb84a1a53c5db2512b1b329330/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64277dff601943485f1ce8e1d4b72d961f81f957ac2be4877a778a938ba582c/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -55,8 +51,7 @@
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Migrations/ApplicationContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Infra/CancunHotel.Infra/Repository/ReservationRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Factory/ApplicationContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/src/Services/CancunHotel.Services.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Services/CancunHotel.Services.API/Factory/ApplicationContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/CustomerFixture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Fixtures/ReservationFixture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/flavio.filho/RiderProjects/AltenChallenge/tests/CancunHotel.Tests/Services/BookingServiceTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -83,7 +78,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.24513619",
     "full.screen.before.presentation.mode": "false",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "RiderDotCoverContinuousTestingPageId",
@@ -91,41 +85,6 @@
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CancunHotel.Services.API">
-    <configuration name="Publish CancunHotel.Services.API to Azure" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
-      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" />
-      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="5309a527-3fb2-472d-a2a4-53a1dee2a721" />
-      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
-      <option name="AZURE_WEB_APP_ID" value="/subscriptions/5309a527-3fb2-472d-a2a4-53a1dee2a721/resourceGroups/alten-rg/providers/Microsoft.Web/sites/cancun-hotel-api" />
-      <option name="AZURE_WEB_APP_NAME" value="" />
-      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
-      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
-      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
-      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
-      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/5309a527-3fb2-472d-a2a4-53a1dee2a721/resourceGroups/alten-rg/providers/Microsoft.Web/serverfarms/ASP-altenrg-8919" />
-      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
-      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
-      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
-      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
-      <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
-      <option name="AZURE_WEB_APP_SLOT_NAME" value="" />
-      <option name="AZURE_WEB_APP_OPEN_BROWSER_PUBLISH" value="0" />
-      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="5309a527-3fb2-472d-a2a4-53a1dee2a721" />
-      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
-      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
-      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
-      <option name="AZURE_SQL_DATABASE_ID" value="" />
-      <option name="AZURE_SQL_DATABASE_NAME" value="" />
-      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
-      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
-      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
-      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
-      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
-      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="N/A" />
-      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
-      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
-      <method v="2" />
-    </configuration>
     <configuration name="CancunHotel.Services.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/CancunHotel.Services.API/CancunHotel.Services.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -159,7 +118,6 @@
     <list>
       <item itemvalue=".NET Launch Settings Profile.CancunHotel.Services.API" />
       <item itemvalue=".NET Launch Settings Profile.CancunHotel.Services.API: IIS Express" />
-      <item itemvalue="Azure - Publish Web App.Publish CancunHotel.Services.API to Azure" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -182,7 +140,28 @@
       <workItem from="1661873877377" duration="21555000" />
       <workItem from="1661909500768" duration="95000" />
       <workItem from="1661909698461" duration="5837000" />
-      <workItem from="1661915648882" duration="19041000" />
+      <workItem from="1661915648882" duration="14018000" />
+    </task>
+    <task id="LOCAL-00122" summary="Change BirthDate to DateOnly on Customer.cs">
+      <created>1661865589732</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1661865589732</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Change BirthDate to DateOnly">
+      <created>1661865609991</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1661865609992</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Add ReadBookingViewModel.cs">
+      <created>1661877794416</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1661877794417</updated>
     </task>
     <task id="LOCAL-00125" summary="Rename BookingViewModel.cs to CreateBookingViewModel.cs">
       <created>1661877810012</created>
@@ -506,28 +485,7 @@
       <option name="project" value="LOCAL" />
       <updated>1661955352168</updated>
     </task>
-    <task id="LOCAL-00171" summary="- Update workspace.xml&#10;- Delete ApplicationContextFactory.cs&#10;-">
-      <created>1661956467531</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1661956467531</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Add Memory Cache to API">
-      <created>1661956765004</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1661956765004</updated>
-    </task>
-    <task id="LOCAL-00173" summary="Add CORS configuration">
-      <created>1661959125721</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1661959125721</updated>
-    </task>
-    <option name="localTasksCounter" value="174" />
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,45 +500,45 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Application 46% 113/208" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Tests 0% 274/274" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 9% 945/1040" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 9% 964/1059" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="CancunHotel.Domain 0% 165/165" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
@@ -605,6 +563,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add UpdateBookingViewModel.cs" />
+    <MESSAGE value="Override Update method to update only changed fields" />
+    <MESSAGE value="Add new constructor to Reservation.cs" />
     <MESSAGE value="Remove validation based on Deleted property" />
     <MESSAGE value="Add Update, Remove and GetReservationByEmail to IBookingService.cs" />
     <MESSAGE value="Add implementation of Update, Remove and GetReservationByEmail in BookingService.cs" />
@@ -627,10 +588,7 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Update README.MD" />
     <MESSAGE value="Update README.MD table of contents" />
-    <MESSAGE value="- Update workspace.xml&#10;- Delete ApplicationContextFactory.cs&#10;-" />
-    <MESSAGE value="Add Memory Cache to API" />
-    <MESSAGE value="Add CORS configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CORS configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.MD table of contents" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
